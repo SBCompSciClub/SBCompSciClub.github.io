@@ -1,0 +1,20 @@
+{
+    "title": "Vikings CSC",
+    "titleTree": "Vikings CSC - ",
+    "_commentBlock:Links": "'link name': ['left/right', 'component/link', 'component.COMPONENT/href link']",
+    "links": {
+        "Home": ["left", "component", "component.home"],
+        "Beginner": ["left", "component", "component.genericpage", "/pages/beginner/"],
+        "Advanced": ["left", "component", "component.genericpage", "/pages/advanced/"],
+        "advanced/tutorials": ["left", "component", "component.genericpage", "/pages/advanced/tutorials/"],
+        "About": ["right", "component", "component.genericpage", "/pages/about/"],
+        "Contact": ["right", "component", "component.contact"],
+        "Schiff": ["right", "link", "http://schiff.codes/"]
+    },
+    "_commentBlock:Buttons": "'button name': ['bootstrap color type', 'component/link', 'component.COMPONENT/href link']",
+    "buttons": {
+        "GitHub": ["success", "link", "https://github.com/shivanmodha"]
+    },
+    "_commentBlock:Default": "link name",
+    "default": "home"
+}

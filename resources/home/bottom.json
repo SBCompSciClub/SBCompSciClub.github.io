@@ -1,0 +1,20 @@
+{
+    "containers": [
+        {
+            "header": "Meeting Dates <p style='display: inline; font-size: 25px;'>for the 2016-2017 school year</p>",
+            "message": "Fortunately for you, the Computer Science Club meets every other thursday. Meeting dates can be found below or on the school website. Be sure to check here for any changes. <ul><li>September 27, 2016</li><li>October 6, 2016</li><li>October 20, 2016</li><li>November 3, 2017</li><li>November 17, 2016</li><li>December 1, 2016</li><li>December 15, 2016</li><li>January 5, 2017</li><li>January 19, 2017</li><li>February 2, 2017</li><li>February 16, 2017</li><li>March 2, 2017</li><li>March 23, 2017</li><li>April 6, 2017</li><li>April 20, 2017</li><li>May 4, 2017</li><li>May 18, 2017</li><li>June 1, 2017</ul>"
+        },
+        {
+            "header": "Credit Requirements",
+            "message": "<ul><li>Attend 50% of the meetings</li><li>Pay to Participate</li></ul>"
+        },
+        {
+            "header": "Additional Resources",
+            "message": "implement me"
+        },
+        {
+            "header": "About Us <div class='btn-group' role='group'><button type='button' class='btn btn-outline-primary' style='text-align: right;' onclick=\"window.location = '/about';\">About</button><button type='button' class='btn btn-outline-primary' style='text-align: right;' onclick=\"window.location = '/contact';\">Contact</button></div>",
+            "message": "implement me"
+        }
+    ]
+}

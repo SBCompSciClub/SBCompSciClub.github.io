@@ -1,1 +1,0 @@
-# SBCompSciClub.github.io
