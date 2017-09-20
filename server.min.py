@@ -3,11 +3,19 @@ import http.server
 import socketserver
 import sys
 import threading
+import os
+import urllib
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     ''' Wrapper for http server handler '''
     def log_message(self, _format, *args):
-        return
+        return 
+    def do_GET(self):
+        urlparts = urllib.parse.urlparse(self.path)
+        request_file_path = urlparts.path.strip('/')
+        if not os.path.exists(request_file_path):
+            self.path = '/'
+        return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 def main():
     ''' Program Entry Point '''
@@ -30,6 +38,7 @@ def start_server(_host, _port):
         print("Starting server:")
         print("    host: " + sys.argv[1])
         print("    port: " + sys.argv[2])
+        httpd.error_message_format = '';
         httpd.serve_forever()
 
 
