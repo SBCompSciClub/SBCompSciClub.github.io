@@ -7,7 +7,7 @@
         "Beginner": ["left", "component", "component.genericpage", "/pages/beginner/"],
         "Advanced": ["left", "component", "component.genericpage", "/pages/advanced/"],
         "advanced/tutorials": ["left", "component", "component.genericpage", "/pages/advanced/tutorials/"],
-        "fair/": ["left", "component", "component.genericpage", "/pages/fair/"],
+        "Fair": ["left", "component", "component.genericpage", "/pages/fair/"],
         "fair/signup": ["left", "component", "component.genericpage", "/pages/fair/signup/"],
         "About": ["right", "component", "component.genericpage", "/pages/about/"],
         "Contact": ["right", "component", "component.contact"],
