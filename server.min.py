@@ -1,4 +1,4 @@
-'''import http.server'''
+''' Shivan Modha | (van|sh) stud10s 2017 | https://github.com/shivanmodha/python-tools'''
 import http.server
 import socketserver
 import sys
