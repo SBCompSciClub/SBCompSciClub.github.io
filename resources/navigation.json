@@ -7,10 +7,11 @@
         "Beginner": ["left", "component", "component.genericpage", "/pages/beginner/"],
         "Advanced": ["left", "component", "component.genericpage", "/pages/advanced/"],
         "advanced/tutorials": ["left", "component", "component.genericpage", "/pages/advanced/tutorials/"],
-        "Fair": ["left", "component", "component.genericpage", "/pages/fair/"],
+        "fair/": ["left", "component", "component.genericpage", "/pages/fair/"],
+        "fair/signup": ["left", "component", "component.genericpage", "/pages/fair/signup/"],
         "About": ["right", "component", "component.genericpage", "/pages/about/"],
         "Contact": ["right", "component", "component.contact"],
-        "Dates": ["right", "component", "component.genericpage"],
+        "Calendar": ["right", "component", "component.genericpage", "/pages/calendar/"],
         "Schiff": ["right", "link", "http://schiff.codes/"]
     },
     "_commentBlock:Buttons": "'button name': ['bootstrap color type', 'component/link', 'component.COMPONENT/href link']",
