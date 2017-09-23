@@ -260,9 +260,13 @@ function entry()
     let paddlePadding = 0;
     paddle = new Brick(new Point(0, window.innerHeight - (paddleHeight / 2) - paddlePadding), new Point(150, paddleHeight), new Color(0, 100, 200));
     paddle.moving = true;
-    for (let j = 1; j < 10; j++)
+    let endX = window.innerWidth / 2;
+    endX /= 55;
+    let endY = window.innerHeight - 300;
+    endY /= 55;
+    for (let j = 1; j < endY; j++)
     {
-        for (let i = 1; i < 10; i++)
+        for (let i = 1; i < endX; i++)
         {
             bricks.push(new Brick(new Point((window.innerWidth / 2) - (55 * i) - 10, 50 + (j * 55)), new Point(50, 50), new Color(i + j * 10, j + i * 20 + 10, i * 10)));
             bricks.push(new Brick(new Point((window.innerWidth / 2) + (55 * i) + 10, 50 + (j * 55)), new Point(50, 50), new Color(i + j * 10, j + i * 20 + 10, i * 10)));
@@ -283,14 +287,18 @@ function entry()
             mode = 0;
             lives = maxLives;
             bricks = [];
-            for (let j = 1; j < 10; j++)
+            let endX = window.innerWidth / 2;
+            endX /= 55;
+            let endY = window.innerHeight - 300;
+            endY /= 55;
+            for (let j = 1; j < endY; j++)
             {
-                for (let i = 1; i < 10; i++)
+                for (let i = 1; i < endX; i++)
                 {
                     bricks.push(new Brick(new Point((window.innerWidth / 2) - (55 * i) - 10, 50 + (j * 55)), new Point(50, 50), new Color(i + j * 10, j + i * 20 + 10, i * 10)));
                     bricks.push(new Brick(new Point((window.innerWidth / 2) + (55 * i) + 10, 50 + (j * 55)), new Point(50, 50), new Color(i + j * 10, j + i * 20 + 10, i * 10)));
                 }
-            }    
+            }  
             maxScore = bricks.length;
         }    
     });

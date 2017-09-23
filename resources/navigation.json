@@ -9,6 +9,7 @@
         "advanced/tutorials": ["left", "component", "component.genericpage", "/pages/advanced/tutorials/"],
         "Fair": ["left", "component", "component.genericpage", "/pages/fair/"],
         "fair/signup": ["left", "component", "component.genericpage", "/pages/fair/signup/"],
+        "fair/demos/brickbreaker": ["left", "component", "component.genericpage", "/pages/fair/demos/brickbreaker/"],
         "About": ["right", "component", "component.genericpage", "/pages/about/"],
         "Contact": ["right", "component", "component.contact"],
         "Calendar": ["right", "component", "component.genericpage", "/pages/calendar/"],
