@@ -1,6 +1,12 @@
-<div style="position: fixed; top: 0px; left: 0px; height: 100%; width: 100%; display: flex; flex-direction: column;">
+<div onload="alert('testing');" style="position: fixed; top: 0px; left: 0px; height: 100%; width: 100%; display: flex; flex-direction: column;">
     <div style="width: 100%; height: 56px;"></div>
     <h1>Brick Breaker <div style="margin-top: -40px; text-align: right;"><button role="button" class="btn btn-outline-secondary" onClick="window.location.href = '/fair'">Back</button></div></h1>
-    <iframe src="https://raw.githubusercontent.com/SBCompSciClub/SBCompSciClub.github.io/master/pages/fair/demos/brickbreaker/game.html" style="border: none; flex: 1; margin-left: 10%; margin-right: 10%"></iframe>
+    <iframe id="iframeComponent" src="/pages/fair/demos/brickbreaker/game.html" style="border: none; flex: 1; margin-left: 10%; margin-right: 10%"></iframe>
     <p>Created by Shivan Modha</p>
+    <img src="/pages/fair/demos/brickbreaker/thumbnail.png" style="display: none;" onload="let iframe = document.getElementById('iframeComponent');
+        iframe.srcdoc = '
+                <body onload=\"entry()\" style=\"width: 100%; height: 100%;\">
+                    <canvas id=\"renderer\"></canvas>
+                    <script src=\"game.js\"></script>
+                </body>;'">
 </div>
