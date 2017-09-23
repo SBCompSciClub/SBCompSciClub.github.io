@@ -1,3 +1,4 @@
+console.log("test");
 class Point
 {
     constructor(_x, _y)
