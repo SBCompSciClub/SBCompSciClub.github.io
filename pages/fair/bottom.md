@@ -17,6 +17,6 @@ So why not learn JavaScript for the web, through the web?
 As we spent the last two years exploring Python, we decided to change the game a little this year by switching over to JavaScript. But don't worry! You can still explore Python through the year by writing simple scripts here and there that deal with the backend, server side processes. Server side python scripts have the power to display frontend websites to the user, enriching your web development experience.
 
 # Demos and Examples
-|  | Description | Shivan |
-|---|--|
-| [![test](http://sugartin.info/wp-content/uploads/2013/11/logo.png)](http://google.com) | Shivan
+|  |  |
+|--|--|
+| [![Brick Breaker](/pages/fair/demos/brickbreaker/thumbnail.png)](/pages/fair/demos/brickbreaker/) | <p style="margin: 0px; padding: 0px; margin-left: 10px;">A simple, 2D brick breaker game made in JavaScript. Check it out on GitHub!</p><br/><div style="width: 100%; text-align: left; margin: 0; padding: 0"><Button role="button" class="btn btn-outline-secondary" style="margin-left: 10px;" onClick="window.location = '/pages/fair/demos/brickbreaker/'">Play</Button><Button class="btn btn-outline-warning" style="margin-left: 10px;" role="button" onClick="window.location = 'https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/BrickBreaker'">View Source</Button></div>|
