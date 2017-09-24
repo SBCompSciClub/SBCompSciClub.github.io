@@ -3,5 +3,5 @@
     <h1>Brick Breaker <div style="margin-top: -40px; text-align: right;"><button role="button" class="btn btn-outline-secondary" onClick="window.location.href = '/fair'">Back</button></div></h1>
     <iframe id="iframeComponent" src="/pages/fair/demos/brickbreaker/game.html" style="border: none; flex: 1; margin-left: 10%; margin-right: 10%"></iframe>
     <p>Created by Shivan Modha</p>
-    <img src="/pages/fair/demos/brickbreaker/thumbnail.png" style="display: none;" onload="document.getElementById('iframeComponent').src = '/pages/fair/demos/brickbreaker/game.html';">
+    <img src="/pages/fair/demos/brickbreaker/thumbnail.png" style="display: none;" onload="console.log(document.getElementById('iframeComponent').contentWindow.location.reload(true));">
 </div>
