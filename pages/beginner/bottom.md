@@ -9,10 +9,6 @@ Paragraph
 ### Heading 3
 Paragraph Shivan modha is great
 
-* test
-* test
-
-lol
 
 ```
 function(e) {
