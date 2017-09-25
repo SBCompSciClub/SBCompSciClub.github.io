@@ -1,13 +1,11 @@
 # Beginner Portal
 ## Welcome to the Beginner Portal!
-We meet in room 200
+Everyone is welcome! No prior coding experience necessary! Here you will find all the information during our club meetings! 
 ## Meeting Room
 Room `200`
 Paragraph
-# Heading 1
-## Heading 2
-### Heading 3
-Paragraph Shivan modha is great
+
+
 
 
 ```
