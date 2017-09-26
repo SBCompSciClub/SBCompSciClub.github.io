@@ -20,3 +20,7 @@ As we spent the last two years exploring Python, we decided to change the game a
 |  |  |
 |--|--|
 | [![Brick Breaker](/pages/fair/demos/brickbreaker/thumbnail.png)](/fair/demos/brickbreaker) | <p style="margin: 0px; padding: 0px; margin-left: 10px;">A simple, 2D brick breaker game made in JavaScript. Check it out on GitHub!</p><br/><div style="width: 100%; text-align: left; margin: 0; padding: 0"><Button role="button" class="btn btn-outline-secondary" style="margin-left: 10px;" onClick="window.location = '/fair/demos/brickbreaker'">Play</Button><Button class="btn btn-outline-warning" style="margin-left: 10px;" role="button" onClick="window.location = 'https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/BrickBreaker'">View Source</Button></div>|
+
+|  |  |
+|--|--|
+| [![Byte Shooter](/pages/fair/demos/diepio/thumbnail.png)](/fair/demos/diepio) | <p style="margin: 0px; padding: 0px; margin-left: 10px;">A Diep.io-inspired local multiplayer game made in JavaScript. Check it out on GitHub!</p><br/><div style="width: 100%; text-align: left; margin: 0; padding: 0"><Button role="button" class="btn btn-outline-secondary" style="margin-left: 10px;" onClick="window.location = '/fair/demos/diepio'">Play</Button><Button class="btn btn-outline-warning" style="margin-left: 10px;" role="button" onClick="window.location = 'https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/Diepio'">View Source</Button></div>|
