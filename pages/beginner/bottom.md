@@ -9,5 +9,5 @@ Meeting Room: Room `200`
 No tutorials at this time. First Club meeting `10/12` 
 
 # Resources
-Visit https://www.codecademy.com
+Visit https://www.codecademy.com and learn any html or css.
 
