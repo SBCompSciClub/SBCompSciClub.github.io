@@ -12,6 +12,7 @@
         "fair/demos/brickbreaker": ["left", "component", "component.genericpage", "/pages/fair/demos/brickbreaker/"],
         "fair/demos/diepio": ["left", "component", "component.genericpage", "/pages/fair/demos/diepio/"],
         "fair/demos/wordle": ["left", "component", "component.genericpage", "/pages/fair/demos/twilio/"],
+        "fair/demos/comic": ["left", "component", "component.genericpage", "/pages/fair/demos/comic/"],
         "About": ["right", "component", "component.genericpage", "/pages/about/"],
         "Contact": ["right", "component", "component.contact"],
         "Calendar": ["right", "component", "component.genericpage", "/pages/calendar/"],
