@@ -14,8 +14,7 @@
         "Home/demos/comic": ["left", "component", "component.genericpage", "/pages/home/demos/comic/"],
         "About": ["right", "component", "component.genericpage", "/pages/about/"],
         "Contact": ["right", "component", "component.contact"],
-        "Calendar": ["right", "component", "component.genericpage", "/pages/calendar/"],
-        "Schiff": ["right", "link", "http://schiff.codes/"]
+        "Calendar": ["right", "component", "component.genericpage", "/pages/calendar/"]
     },
     "_commentBlock:Buttons": "'button name': ['bootstrap color type', 'component/link', 'component.COMPONENT/href link']",
     "buttons": {

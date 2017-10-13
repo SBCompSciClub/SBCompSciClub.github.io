@@ -1,6 +1,6 @@
 # Meeting Dates <p style="display: inline; font-size: 25px">for the 2017-2018 school year</p>
 Fortunately for you, the Computer Science Club meets twice a month on thursday. Meeting dates can be found below or on the school website. Be sure to check here for any changes.
-- <strike>October 12, 2017</strike>
+- <font style="color: gray;">October 12, 2017</font>
 - <font style="color: green;">October 26, 2017</font>
 - November 16, 2017
 - November 30, 2017

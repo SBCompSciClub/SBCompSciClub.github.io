@@ -1,5 +1,9 @@
 # Welcome
-<img src="/pages/home/wordle.png" style="max-width: 100%; text-align: center;"></img>
+Imagine a wordle created from everything you text. Through Twilio, creating such a thing is possible. On our first meeting, we had everyone text whatever they wanted to our number. Here is the final result!
+
+<img src="/pages/home/wordle.png" style="width: 100%; text-align: center;"></img>
+__Special thanks to everyone from the first meeting for making this image possible!__
+<div style="background-color: rgba(255, 255, 255, 0.25); height: 1px; width: 100%; padding-top: 0px; border-radius: 100px"></div>
 ## Join Us
 Join the Computer Science Club and learn JavaScript, the programming language that runs the web! Explore your creative nature by designing and programming interactive websites from the ground up, and learn the beauty of the open source community. Expand your programming skills and learn the basics of applications development applicable to any other computer science related course or project. _All while gaining career and college readiness!_
 
@@ -18,8 +22,8 @@ So why not learn JavaScript for the web, through the web?
 As we spent the last two years exploring Python, we decided to change the game a little this year by switching over to JavaScript. But don't worry! You can still explore Python through the year by writing simple scripts here and there that deal with the backend, server side processes. Server side python scripts have the power to display frontend websites to the user, enriching your web development experience.
 
 # Demos and Examples
-|  |  |
-|--|--|
+| | |
+|:--:|:--|
 | [![Brick Breaker](/pages/home/demos/brickbreaker/thumbnail.png)](/home/demos/brickbreaker) | <p style="margin: 0px; padding: 0px; margin-left: 10px;">2D brick breaker game made in JavaScript, implementing simple physics and peripheral input. Check it out on GitHub!</p><br/><div style="width: 100%; text-align: left; margin: 0; padding: 0"><Button role="button" class="btn btn-outline-secondary" style="margin-left: 10px;" onClick="window.location = '/home/demos/brickbreaker'">View</Button><Button class="btn btn-outline-warning" style="margin-left: 10px;" role="button" onClick="window.location = 'https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/BrickBreaker'">Source</Button></div>|
 | [![Byte Shooter](/pages/home/demos/diepio/thumbnail.png)](/home/demos/diepio) | <p style="margin: 0px; padding: 0px; margin-left: 10px;">[Diep.io](http://diep.io/)-inspired local multiplayer game made in JavaScript. Check it out on GitHub!</p><br/><div style="width: 100%; text-align: left; margin: 0; padding: 0"><Button role="button" class="btn btn-outline-secondary" style="margin-left: 10px;" onClick="window.location = '/home/demos/diepio'">View</Button><Button class="btn btn-outline-warning" style="margin-left: 10px;" role="button" onClick="window.location = 'https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/Diepio'">Source</Button><Button class="btn btn-outline-primary" style="margin-left: 10px;" role="button" onClick="window.location = 'http://diep.io/'">Diepio</Button></div>|
 | [![Wordle Text](/pages/home/demos/twilio/thumbnail.png)](/home/demos/wordle) | <p style="margin: 0px; padding: 0px; margin-left: 10px;">A [wordle](http://www.wordle.net/) generated from text messages. Any messages sent to a number will appear on the screen, and the size depends on the frequency of the message. This demo is powered by [Twilio](https://twilio.com). Although we had a fun time with this demo on our first meeting, the service has been deactivated for security reasons. Check again soon!</p><br/><div style="width: 100%; text-align: left; margin: 0; padding: 0"><Button role="button" class="btn btn-outline-secondary" style="margin-left: 10px;" onClick="window.location = '/home/demos/wordle'">View</Button><Button class="btn btn-outline-warning" style="margin-left: 10px;" role="button" onClick="window.location = 'https://github.com/SBCompSciClub/Twilio-Demo/tree/master/wordle'">Source</Button><Button class="btn btn-outline-primary" style="margin-left: 10px;" role="button" onClick="window.location = 'https://twilio.com/'">Twilio</Button></div>|
