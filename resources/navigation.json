@@ -3,16 +3,15 @@
     "titleTree": "Vikings CSC - ",
     "_commentBlock:Links": "'link name': ['left/right', 'component/link', 'component.COMPONENT/href link']",
     "links": {
-        "Home": ["left", "component", "component.home"],
+        "Home": ["left", "component", "component.genericpage", "/pages/home/"],
         "Beginner": ["left", "component", "component.genericpage", "/pages/beginner/"],
         "Advanced": ["left", "component", "component.genericpage", "/pages/advanced/"],
         "advanced/tutorials": ["left", "component", "component.genericpage", "/pages/advanced/tutorials/"],
-        "Fair": ["left", "component", "component.genericpage", "/pages/fair/"],
-        "fair/signup": ["left", "component", "component.genericpage", "/pages/fair/signup/"],
-        "fair/demos/brickbreaker": ["left", "component", "component.genericpage", "/pages/fair/demos/brickbreaker/"],
-        "fair/demos/diepio": ["left", "component", "component.genericpage", "/pages/fair/demos/diepio/"],
-        "fair/demos/wordle": ["left", "component", "component.genericpage", "/pages/fair/demos/twilio/"],
-        "fair/demos/comic": ["left", "component", "component.genericpage", "/pages/fair/demos/comic/"],
+        "Home/signup": ["left", "component", "component.genericpage", "/pages/home/signup/"],
+        "Home/demos/brickbreaker": ["left", "component", "component.genericpage", "/pages/home/demos/brickbreaker/"],
+        "Home/demos/diepio": ["left", "component", "component.genericpage", "/pages/home/demos/diepio/"],
+        "Home/demos/wordle": ["left", "component", "component.genericpage", "/pages/home/demos/twilio/"],
+        "Home/demos/comic": ["left", "component", "component.genericpage", "/pages/home/demos/comic/"],
         "About": ["right", "component", "component.genericpage", "/pages/about/"],
         "Contact": ["right", "component", "component.contact"],
         "Calendar": ["right", "component", "component.genericpage", "/pages/calendar/"],
@@ -23,5 +22,5 @@
         "GitHub": ["success", "link", "https://github.com/sbcompsciclub"]
     },
     "_commentBlock:Default": "link name",
-    "default": "home"
+    "default": "Home"
 }
