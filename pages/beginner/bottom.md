@@ -6,7 +6,7 @@ Meeting Room: Room `200`
 
 
 # Tutorials
-No tutorials at this time. Next Club meeting `10/26` 
+No tutorials at this time. Next Club meeting `10/26`.
 
 # Resources
 Visit https://www.codecademy.com and learn any html or css.
