@@ -1,1 +1,1 @@
-window.location.reload(true);
+document.body.innerHTML = "If you are seeing this, there is a problem with your cache. You need to manually refresh your chrome cache, and unregister this sites service-worker. Google is your friend."
