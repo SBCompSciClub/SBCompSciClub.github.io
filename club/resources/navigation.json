@@ -1,5 +1,5 @@
 {
-    "title": "Vikings CSC",
+    "title": "<img src='/club/favicon.ico' width='25px' style='margin-top: -3px;'></img> Vikings CSC",
     "titleTree": "Vikings CSC - ",
     "navbar": {
         "color": "rgba(0, 0, 0, 1)"
@@ -43,7 +43,7 @@
         }
     },
     "buttons": {
-        "GitHub": ["success", "link", "https://github.com/shivanmodha"]
+        "GitHub": ["success", "link", "https://github.com/sbcompsciclub"]
     },
     "default": "Home"
 }
