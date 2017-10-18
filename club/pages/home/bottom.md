@@ -9,7 +9,7 @@ Site navigation is handled through the JSON file `resources/navigation.json`, wh
 You will notice that a lot of the pages defined are simple HTML pages. However, upon closer examination, you will find markdown syntax (this entire page is markdown, but is defined as `bottom.html` instead). Each of these HTML files accepts markdown text, so that formatting can appear in this view.
 
 ## Nested pages
-You can also nest pages too.<br/><br/><Button role="button" class="btn btn-outline-secondary" onclick="window.location.href = '/home/nested';">Nested Page Test</Button><br/><br/>
+You can also nest pages too.<br/><br/><Button role="button" class="btn btn-outline-secondary" onclick="window.location.href = '/club/home/nested';">Nested Page Test</Button><br/><br/>
 You can have as many as you want!
 ## Homepage
 This site doesn't have to run on the root of a server, or GitHub pages website. In fact, that would be problematic since every request after `/` would be directed to the frameworks `index.html`, making it impossible to host anything else. In `navigation.json`, define:
