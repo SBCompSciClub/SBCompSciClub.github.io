@@ -1,6 +1,6 @@
 {
-    "title": "SPA Framework",
-    "titleTree": "",
+    "title": "Vikings CSC",
+    "titleTree": "Vikings CSC - ",
     "navbar": {
         "color": "rgba(0, 0, 0, 1)"
     },
@@ -11,34 +11,39 @@
             "directory": "/club/pages/home/",
             "component": "generic"
         },
-        "Nested": {
-            "visible": "none",
-            "routing": "/home/nested",
-            "directory": "/club/pages/home/nested/",
-            "component": "generic"
-        },
-        "Left Page": {
+        "Beginner": {
             "visible": "left",
-            "routing": "/left",
-            "directory": "/club/pages/left/",
+            "routing": "/beginner",
+            "directory": "/club/pages/beginner/",
             "component": "generic"
         },
-        "Right Page": {
-            "visible": "right",
-            "routing": "/right",
-            "directory": "/club/pages/right/",
+        "Advanced": {
+            "visible": "left",
+            "routing": "/advanced",
+            "directory": "/club/pages/advanced/",
             "component": "generic"
         },
-        "Random Link": {
+        "About": {
             "visible": "right",
-            "routing": "https://www.google.com",
+            "routing": "/about",
+            "directory": "/club/pages/about/",
+            "component": "generic"
+        },
+        "Contact": {
+            "visible": "right",
+            "routing": "/contact",
+            "directory": "/club/pages/contact/",
             "component": "link"
+        },
+        "Calendar": {
+            "visible": "right",
+            "routing": "/calendar",
+            "directory": "/club/pages/calendar/",
+            "component": "generic"
         }
     },
     "buttons": {
-        "GitHub": ["success", "link", "https://github.com/shivanmodha"],
-        "Button": ["warning", "link", "https://www.google.com"],
-        "404 Test": ["danger", "link", "/404"]
+        "GitHub": ["success", "link", "https://github.com/shivanmodha"]
     },
     "default": "Home"
 }
