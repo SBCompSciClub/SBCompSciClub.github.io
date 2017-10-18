@@ -33,7 +33,7 @@
             "visible": "right",
             "routing": "/contact",
             "directory": "/club/pages/contact/",
-            "component": "link"
+            "component": "generic"
         },
         "Calendar": {
             "visible": "right",
