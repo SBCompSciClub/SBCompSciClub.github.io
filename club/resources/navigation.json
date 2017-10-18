@@ -7,7 +7,7 @@
     "links": {
         "Home": {
             "visible": "left",
-            "routing": "/home",
+            "routing": "/",
             "directory": "/club/pages/home/",
             "component": "generic"
         },
