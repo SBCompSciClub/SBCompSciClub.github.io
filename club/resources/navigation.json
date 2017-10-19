@@ -11,25 +11,25 @@
             "directory": "/club/pages/home/",
             "component": "generic"
         },
-        "demos/brickbreaker": {
+        "Brickbreaker": {
             "visible": "none",
             "routing": "/club/demos/brickbreaker",
             "directory": "/club/pages/home/demos/brickbreaker/",
             "component": "generic"
         },
-        "demos/comic": {
+        "Comic": {
             "visible": "none",
             "routing": "/club/demos/comic",
             "directory": "/club/pages/home/demos/comic/",
             "component": "generic"
         },
-        "demos/diepio": {
+        "Diepio": {
             "visible": "none",
             "routing": "/club/demos/diepio",
             "directory": "/club/pages/home/demos/diepio/",
             "component": "generic"
         },
-        "demos/twilio": {
+        "Twilio": {
             "visible": "none",
             "routing": "/club/demos/twilio",
             "directory": "/club/pages/home/demos/twilio/",
