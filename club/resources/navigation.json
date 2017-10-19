@@ -13,25 +13,25 @@
         },
         "Brickbreaker": {
             "visible": "none",
-            "routing": "/club/demos/brickbreaker",
+            "routing": "/demos/brickbreaker",
             "directory": "/club/pages/home/demos/brickbreaker/",
             "component": "generic"
         },
         "Comic": {
             "visible": "none",
-            "routing": "/club/demos/comic",
+            "routing": "/demos/comic",
             "directory": "/club/pages/home/demos/comic/",
             "component": "generic"
         },
         "Diepio": {
             "visible": "none",
-            "routing": "/club/demos/diepio",
+            "routing": "/demos/diepio",
             "directory": "/club/pages/home/demos/diepio/",
             "component": "generic"
         },
         "Twilio": {
             "visible": "none",
-            "routing": "/club/demos/twilio",
+            "routing": "/demos/twilio",
             "directory": "/club/pages/home/demos/twilio/",
             "component": "generic"
         },
@@ -63,6 +63,12 @@
             "visible": "right",
             "routing": "/calendar",
             "directory": "/club/pages/calendar/",
+            "component": "generic"
+        },
+        "Signup": {
+            "visible": "none",
+            "routing": "/signup",
+            "directory": "/club/pages/signup/",
             "component": "generic"
         }
     },
