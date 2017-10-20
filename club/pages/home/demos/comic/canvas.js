@@ -38,20 +38,8 @@ window.addEventListener('resize',
     function(event) {
         canvas.width = window.innerWidth
         canvas.height = window.innerHeight
-        var width;
-        var height;
-        if(typeof window.innerWidth != 'undefined')
-        {
-            width = window.innerWidth
-            height = window.innerHeight
-        }
-        else
-        {
-            width = '1536px';
-            height='734px';
-        }
         var body_element = document.querySelector('body');
-        body_element.style.backgroundSize = width+' '+height;
+        body_element.style.setbackgroundSize(window.innerWidth+' '+window.innerHeight);
         init()
     }
 )

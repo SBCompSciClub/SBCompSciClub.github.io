@@ -2,12 +2,9 @@
 
 body{
     margin: 0;
-    background-image: url("ocean.jpeg");
     padding-right: 0;
     border: 0;
-    background-size: 1536px 734px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
     z-index: -2;
 }
 
@@ -18,6 +15,10 @@ canvas{
     display: block;
     top: 0;
     left: 0;
+    background-image: url("ocean.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: -1;
 }
 
