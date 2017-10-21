@@ -1,1 +1,0 @@
-# Advanced Tutorials <div style="display: inline;"><button role="button" class="btn btn-outline-secondary" onClick="window.location = '/advanced'">Return</button></div>
