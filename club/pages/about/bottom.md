@@ -12,5 +12,5 @@ Join us today!
 
 Explore your creative nature by designing and programming interactive websites from the ground up, and learn the beauty of the open source community. Expand your programming skills and learn the basics of applications development applicable to any other computer science related course or project. All while gaining career and college readiness!
 
-Visit our Club Fair Page to sign up for e-mail reminders!
+Visit our home page to sign up for e-mail reminders!
 
