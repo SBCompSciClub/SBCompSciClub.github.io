@@ -4,6 +4,10 @@ Everyone is welcome! No prior coding experience necessary! You will find all the
 
 Meeting Room: Room `200`
 
+Text Editor: Brackets Portable
+
+Download Link: http://tinyurl.com/bracketdownload
+
 # Tutorials
 No tutorials at this time. Next Club meeting `10/26`.
 
