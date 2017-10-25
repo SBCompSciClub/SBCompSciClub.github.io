@@ -1,7 +1,7 @@
 # Advanced Portal
 Welcome to the advanced portal! Here, you can find source code, examples, and tutorials.
 ## Development Environment
-It is always important to find a text editor that suits your needs and provides all the capabilities you look for when programming. While there are many text editors available, these are a few of our favorites. The portable versions do require administrative privileges, and will work on the school computers.
+It is always important to find a text editor that suits your needs and provides all the capabilities you look for when programming. While there are many text editors available, these are a few of our favorites. The portable versions do not require administrative privileges, and will work on the school computers.
 
 | | |
 |:--:|:--|
