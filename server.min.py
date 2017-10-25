@@ -1,4 +1,8 @@
-''' Shivan Modha | (van|sh) stud10s 2017 | https://github.com/shivanmodha/python-tools'''
+'''
+    Shivan Modha | (van|sh) stud10s 2017 | https://github.com/shivanmodha/python-tools
+    Edited: 10/25/17
+    This script was revised specifically for this repository; therefore, it will only work as intended here.
+'''
 import http.server
 import socketserver
 import sys
@@ -14,7 +18,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         urlparts = urllib.parse.urlparse(self.path)
         request_file_path = urlparts.path.strip('/')
         if not os.path.exists(request_file_path):
-            self.path = '/'
+            self.path = '/club/'
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 def main():

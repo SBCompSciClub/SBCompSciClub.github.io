@@ -1,6 +1,7 @@
 {
-    "title": "<a href='/'><img src='/club/favicon.ico' width='25px' style='margin-top: -3px;'></img> Vikings CSC</a>",
+    "title": "<img src='/club/favicon.ico' width='25px' style='margin-top: -3px;'></img> Vikings CSC",
     "titleTree": "Vikings CSC - ",
+    "href": "/club",
     "navbar": {
         "color": "rgba(0, 0, 0, 1)"
     },
