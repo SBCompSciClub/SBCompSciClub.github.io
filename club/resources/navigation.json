@@ -1,12 +1,12 @@
 {
-    "title": "<img src='/club/favicon.ico' width='25px' style='margin-top: -3px;'></img> Vikings CSC",
+    "title": "<a href='/'><img src='/club/favicon.ico' width='25px' style='margin-top: -3px;'></img> Vikings CSC</a>",
     "titleTree": "Vikings CSC - ",
     "navbar": {
         "color": "rgba(0, 0, 0, 1)"
     },
     "links": {
         "Home": {
-            "visible": "left",
+            "visible": "none",
             "routing": "/",
             "directory": "/club/pages/home/",
             "component": "generic"
@@ -45,6 +45,12 @@
             "visible": "left",
             "routing": "/advanced",
             "directory": "/club/pages/advanced/",
+            "component": "generic"
+        },
+        "Advanced Tutorials": {
+            "visible": "none",
+            "routing": "/advanced/tutorials",
+            "directory": "/club/pages/advanced/tutorials/",
             "component": "generic"
         },
         "About": {
