@@ -12,27 +12,27 @@
             "directory": "/club/pages/home/",
             "component": "generic"
         },
-        "Brickbreaker": {
+        "Demos Brickbreaker": {
             "visible": "none",
             "routing": "/demos/brickbreaker",
             "directory": "/club/pages/home/demos/brickbreaker/",
             "component": "generic"
         },
-        "Comic": {
+        "Demos Comic": {
             "visible": "none",
             "routing": "/demos/comic",
             "directory": "/club/pages/home/demos/comic/",
             "component": "generic"
         },
-        "Diepio": {
+        "Demos Diepio": {
             "visible": "none",
             "routing": "/demos/diepio",
             "directory": "/club/pages/home/demos/diepio/",
             "component": "generic"
         },
-        "Twilio": {
+        "Demos Twilio": {
             "visible": "none",
-            "routing": "/demos/twilio",
+            "routing": "/demos/wordle",
             "directory": "/club/pages/home/demos/twilio/",
             "component": "generic"
         },
@@ -52,6 +52,18 @@
             "visible": "none",
             "routing": "/advanced/tutorials",
             "directory": "/club/pages/advanced/tutorials/",
+            "component": "generic"
+        },
+        "Advanced Demos": {
+            "visible": "none",
+            "routing": "/advanced/demos",
+            "directory": "/club/pages/advanced/demos/",
+            "component": "generic"
+        },
+        "Advanced Demos Place": {
+            "visible": "none",
+            "routing": "/advanced/demos/place",
+            "directory": "/club/pages/advanced/demos/place/",
             "component": "generic"
         },
         "About": {
