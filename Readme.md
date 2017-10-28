@@ -3,7 +3,8 @@ Join the Computer Science Club and learn JavaScript, the programming language th
 
 In this club, you will be exposed to cutting edge code and various programming utilities that drives the world today. Through JavaScript, you will inherently learn many programming concepts that you never dreamed of! The best part is that JavaScript's simplistic syntax makes it easy to pick up, no matter what (even if you have no programming background)! Why not give it a try?
 
-# Site Documentation
+# Site Documentation (SPA Framework v1)
+> This documentation version is out of date as of SPA Framework v2)
 ## Table of Contents
 - [Structure](#project-structure)
 - [Development Environment](#development-environment)
