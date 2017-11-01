@@ -3,21 +3,32 @@
     <div class="container">
         <h1 class="display-3">Welcome</h1>
         <p class="lead">
-            Join the Computer Science Club and learn JavaScript, the programming language that runs the web! Explore your creative nature by designing and programming interactive websites from the ground up, and learn the beauty of the open source community. Expand your programming skills and learn the basics of applications development applicable to any other computer science related course or project. <i>All while gaining career and college readiness!</i>
+            Join the Computer Science Club and learn JavaScript, the programming language that runs the web! Explore your creative nature
+            by designing and programming interactive websites from the ground up, and learn the beauty of the open source
+            community. Expand your programming skills and learn the basics of applications development applicable to any
+            other computer science related course or project.
+            <i>All while gaining career and college readiness!</i>
         </p>
+        <button role="button" class="btn btn-outline-primary" onClick="window.location = '/club/signup'">Sign Up</button>
     </div>
 </div>
+<img src="ignoreMe" onerror="
+$(function(){
+    $('#cBox').carousel({
+        interval: 5000
+    });
+});" style="position: fixed; height: 0px; width: 0px; margin: 0px; padding: 0px;"></img>
 <div id="cBox" class="carousel slide" data-ride="carousel" style="background-color: rgba(0, 0, 0, 0.0); color: white; margin-bottom: 0px; text-align: justify;">
     <ol class="carousel-indicators">
-        <li data-target="#cBox" data-slide-to="0" class="active"></li>
-        <li data-target="#cBox" data-slide-to="1"></li>
+        <li data-target="#cBox" data-slide-to="0"></li>
+        <li data-target="#cBox" data-slide-to="1" class="active"></li>
         <li data-target="#cBox" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="width: 100%; max-height: 575px;">
+        <div class="carousel-item" style="width: 100%; max-height: 575px;">
             <div class="">
                 <div style="background-color: black; margin-bottom: 0px; padding-left: 10%; padding-right: 10%; padding-top: 20px; padding-bottom: 10px;">
-                    
+
                 </div>
                 <table style="width: 100%">
                     <td style="width: 15%; background-color: black;"></td>
@@ -28,34 +39,47 @@
                 </table>
                 <div style="background-color: black; margin-bottom: 0px; padding-left: 10%; padding-right: 10%; padding-top: 10px; padding-bottom: 25px;">
 
-                </div>                
+                </div>
             </div>
             <div style="display: block;">
             </div>
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.75)">
                 <h3>Twilio Wordle</h3>
                 <p class="lead" style="text-align: center;">
-                    Imagine a wordle created from everything you text. Through Twilio, creating such a thing is possible. On our first meeting, we had everyone text whatever they wanted to our number. Here is the final result!
+                    Imagine a wordle created from everything you text. Through Twilio, creating such a thing is possible. On our first meeting,
+                    we had everyone text whatever they wanted to our number. Here is the final result!
                 </p>
             </div>
         </div>
-        <div class="carousel-item" style="background-color: rgba(0, 0, 0, 0.5); padding-left: 15%; padding-right: 15%; height: 575px;">
+        <div class="carousel-item active" style="background-color: rgba(0, 0, 0, 0.5); padding-left: 15%; padding-right: 15%; height: 575px;">
             <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
                 <h1 class="display-3" style="text-align: right;">21st Century</h1>
-                <p class="lead" style="text-align: justify">Programmers from all around the world encourage collaboration. Almost every single application on your phone started
-                    out as a simple idea. That idea flourished into the final product you’re so used to, not by one developer, but
-                    by many diverse people working together to build something awesome. And it all comes down to one thing.</p>
-                <p class="lead" style="text-align: justify">The internet itself harbors one of the most innovative communities that strives to change the world: the open source
-                    world. All those questions that need answering are explained by physical strangers but virtual pioneers.</p>
+                <p class="lead" style="text-align: justify">Programmers from all around the world encourage collaboration. Almost every single application on your phone
+                    started out as a simple idea. That idea flourished into the final product you’re so used to, not by one
+                    developer, but by many diverse people working together to build something awesome. And it all comes down
+                    to one thing.</p>
+                <p class="lead" style="text-align: justify">The internet itself harbors one of the most innovative communities that strives to change the world: the
+                    open source world. All those questions that need answering are explained by physical strangers but virtual
+                    pioneers.
+                </p>
                 <p class="lead" style="text-align: justify">So why not learn JavaScript for the web, through the web?</p>
+                <button role="button" class="btn btn-outline-success" onClick="window.location = 'https://github.com/'">Join GitHub</button>
             </div>
         </div>
         <div class="carousel-item" style="background-color: rgba(0, 0, 0, 0.5); padding-left: 15%; padding-right: 15%; height: 575px;">
             <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
                 <h1 class="display-3" style="text-align: right;">What about python?</h1>
                 <p class="lead" style="text-align: justify">
-                    As we spent the last two years exploring Python, we decided to change the game a little this year by switching over to JavaScript. But don't worry! You can still explore Python through the year by writing simple scripts here and there that deal with the backend, server side processes. Server side python scripts have the power to display frontend websites to the user, enriching your web development experience.
+                    As we spent the last two years exploring Python, we decided to change the game a little this year by switching over to JavaScript.
+                    But don't worry! You can still explore Python through the year by writing simple scripts here and there
+                    that deal with the backend, server side processes. Server side python scripts have the power to display
+                    frontend websites to the user, enriching your web development experience.
                 </p>
+                <h1 class="display-3" style="text-align: left;">GitHub</h1>
+                <p class="lead" style="text-align: justify">GitHub is a modern configuration management tool that many programmers use today. Through GitHub, you can
+                    track changes to your code and collaborate with many teams and groups of people to build something awesome.
+                    This year, we are moving to GitHub as it will give you access to code and examples that we will show
+                    throughout the year.</p>
             </div>
         </div>
     </div>
@@ -74,44 +98,106 @@
         <p class="lead" style="text-align: center;">
             The best way to witness the true power of JavaScript is to see for yourself what you can do with it!
         </p>
-        <div style="display: table; margin: auto;">
-            <div class="card" style="width: 250px; background-color: rgba(0, 0, 0, 0.5); text-align: left; float: left; margin-right: 10px; margin-top: 10px;">
-                <img class="card-img-top" src="/club/pages/advanced/thumbnail_vscode.png" style="width: 150px; margin: 50px;">
-                <div class="card-block">
-                    <h4 class="card-title">Visual Studio Code</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Full</a>
-                    <a href="#" class="btn btn-outline-danger" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Portable</a>
+        <div style="width: 100%; text-align: center; padding-left: 75px;">
+            <div style="float: left; margin-top: 10px; margin-right: 5px;">
+                <div style="width: 350px;">
+                    <div class="card" style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; border: none; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">
+                        <img class="image pull-left" style="float: left; width: 150px; height: 150px; padding: 0px; margin: 0px; margin-right: 10px;"
+                            src="/club/pages/home/demos/brickbreaker/thumbnail.png"></img>
+                        <div class="content pull-left" style="float: left; height: 150px; width: 188px; overflow: hidden; padding: 5px; text-align: left;">
+                            <h4 style="margin-top: 30px">
+                                Brickbreaker
+                            </h4>
+                            <a href="/club/demos/brickbreaker" class="btn btn-primary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">View</a>
+                            <a href="https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/BrickBreaker" class="btn btn-outline-primary" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Source</a>
+                        </div>
+                        <div class="clearfix">
+
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 350px">
+                    <div class="card" style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; border: none; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">
+                        <img class="image pull-left" style="float: left; width: 150px; height: 150px; padding: 0px; margin: 0px; margin-right: 10px;"
+                            src="/club/pages/home/demos/comic/thumbnail.png"></img>
+                        <div class="content pull-left" style="float: left; height: 150px; width: 188px; overflow: hidden; padding: 5px; text-align: left;">
+                            <h4 style="margin-top: 30px">
+                                Comic
+                            </h4>
+                            <a href="/club/demos/comic" class="btn btn-primary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">View</a>
+                            <a href="https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/BeginnerDemos/Comic%20Demo" class="btn btn-outline-primary"
+                                style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Source</a>
+                        </div>
+                        <div class="clearfix">
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 250px; background-color: rgba(0, 0, 0, 0.5); text-align: left; float: left; margin-right: 10px; margin-top: 10px;">
-                <img class="card-img-top" src="/club/pages/advanced/thumbnail_atom.png" style="width: 150px; margin: 50px;">
+            <div class="card" style="width: 250px; background-color: rgba(0, 0, 0, 0.5); text-align: center; float: left; margin-right: 5px; margin-top: 10px;">
+                <div class="card-img-top" style="background-color: white">
+                    <img style="height: 150px;" src="/r/place/thumbnail.png">
+                </div>
                 <div class="card-block">
-                    <h4 class="card-title">Atom</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-success" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Full</a>
-                    <a href="#" class="btn btn-outline-success" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Portable</a>
+                    <h4 class="card-title">SBHS/Place</h4>
+                    <p class="card-text">An interactive, online sandbox. Reddit's r/place except with code.</p>
+                    <a href="/club/advanced/demos/place" class="btn btn-secondary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">View</a>
+                    <a href="https://github.com/SBCompSciClub/SBHS-Place" class="btn btn-secondary" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Source</a>
                 </div>
             </div>
-            <div class="card" style="width: 250px; background-color: rgba(0, 0, 0, 0.5); text-align: left; float: left; margin-right: 10px; margin-top: 10px;">
-                <img class="card-img-top" src="/club/pages/advanced/thumbnail_sublime.png" style="width: 150px; margin: 50px;">
-                <div class="card-block">
-                    <h4 class="card-title">Sublime Text</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Full</a>
-                    <a href="#" class="btn btn-outline-secondary" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Portable</a>
-                </div>
-            </div>
-            <div class="card" style="width: 250px; background-color: rgba(0, 0, 0, 0.5); text-align: left; float: left; margin-right: 10px; margin-top: 10px;">
-                <img class="card-img-top" src="/club/pages/advanced/thumbnail_brackets.png" style="width: 150px; margin: 50px;">
-                <div class="card-block">
-                    <h4 class="card-title">Brackets</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Full</a>
-                    <a href="#" class="btn btn-outline-primary" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Portable</a>
+            <div style="display: table;">
+                <div style="float: left; margin-top: 10px; margin-right: 5px;">
+                    <div style="width: 350px;">
+                        <div class="card" style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; border: none; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                            <div class="content pull-left" style="float: left; height: 150px; width: 188px; overflow: hidden; padding: 5px; text-align: right;">
+                                <h4 style="margin-top: 30px">
+                                    Diepio
+                                </h4>
+                                <a href="https://github.com/SBCompSciClub/ClubFair/tree/master/Demos/Diepio" class="btn btn-outline-primary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Source</a>
+                                <a href="/club/demos/diepio" class="btn btn-primary" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">View</a>
+                            </div>
+                            <img class="image pull-left" style="float: left; width: 150px; height: 150px; padding: 0px; margin: 0px; margin-left: 10px;"
+                                src="/club/pages/home/demos/diepio/thumbnail.png"></img>
+                            <div class="clearfix">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 350px">
+                        <div class="card" style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; border: none; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                            <div class="content pull-left" style="float: left; height: 150px; width: 188px; overflow: hidden; padding: 5px; text-align: right;">
+                                <h4 style="margin-top: 30px">
+                                    Twilio Wordle
+                                </h4>
+                                <a href="https://github.com/SBCompSciClub/Twilio-Demo/tree/master/wordle" class="btn btn-outline-primary" style="margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Source</a>
+                                <a href="/club/demos/wordle" class="btn btn-primary" style="margin-left: -5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">View</a>
+                            </div>
+                            <img class="image pull-left" style="float: left; width: 150px; height: 150px; padding: 0px; margin: 0px; margin-left: 10px;"
+                                src="/club/pages/home/demos/twilio/thumbnail.png"></img>
+                            <div class="clearfix">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="lead" style="text-align: center">You are welcome to use any text editor you prefer, as long as you feel comfortable with it!</p>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid" style="background-color: rgba(0, 0, 0, 0.75); color: white; margin-bottom: 0px; text-align: justify;">
+    <div class="container">
+        <h1 class="display-3">Credit Requirements</h1>
+        <p class="lead">
+            Below are requirements needed to get credit for this club.
+            <ol>
+                <li>Attend 50% of the meetings</li>
+                <li>Pay to Participate ($25 membership fee)</li>
+                <li>Submit Pay to Participate Receipt</li>
+                <li>$4 Club Dues</li>
+            </ol>
+            <div class='alert alert-warning' role='alert' style='font-size: 15px'>It is recommended you attend as many of the meetings as soon as possible to ensure you meet the 50% attendance
+                requirement as later meeting dates may be cancelled or rescheduled at any time.</div>
+            Any pay to particpate questions? Contact SBHS.PTP@sbparents.org and be sure to include contact information.
+        </p>
     </div>
 </div>
