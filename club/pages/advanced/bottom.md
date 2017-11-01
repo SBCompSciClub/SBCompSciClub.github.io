@@ -1,6 +1,8 @@
 # Advanced Portal
 ## Welcome
 Welcome to the advanced portal! Here, you can find source code, examples, and tutorials.
+<div style="background-color: rgba(255, 255, 255, 0.25); height: 1px; width: 100%; padding-top: 0px; border-radius: 100px;"></div>
+Shivan Modha
 # Tutorials <div style="display: inline;"><button role="button" class="btn btn-outline-secondary" onClick="window.location = '/club/advanced/tutorials'">View all </button></div>
 ## Recent
 Unfortunately, there aren't any recent tutorials

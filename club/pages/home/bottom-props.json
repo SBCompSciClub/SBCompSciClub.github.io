@@ -1,10 +1,5 @@
 {
-    "markdown": true,
+    "markdown": false,
     "containerstyle": {
-        "background": "radial-gradient(red, yellow, green);",
-        "backgroundImage": "url('/club/pages/home/motherboard.png')",
-        "backgroundSize": "100%",
-        "backgroundRepeat": "repeat-y",
-        "backgroundPosition": "center"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "markdown": false,
+    "markdown": true,
     "containerstyle": {
         "backgroundColor": "black",
         "color": "white"
