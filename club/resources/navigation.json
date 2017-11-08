@@ -72,12 +72,6 @@
             "directory": "/club/pages/about/",
             "component": "generic"
         },
-        "Contact": {
-            "visible": "right",
-            "routing": "/contact",
-            "directory": "/club/pages/contact/",
-            "component": "generic"
-        },
         "Calendar": {
             "visible": "right",
             "routing": "/calendar",
