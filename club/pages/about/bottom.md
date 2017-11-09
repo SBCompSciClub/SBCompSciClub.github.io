@@ -4,6 +4,13 @@
 **Shivan Modha, Kevin Sun, Tanvi Wagle, Swapnil Napuri, Rishav Bhagat, and Shreya Suresh**
 
 
+### Contact US
+Feel free to contact us if you have any questions, comments or concerns.
+Email: sbcompsciclub@gmail.com
+Remind: Text 81010 @sbcompsci
+Reach out to one of our officers or Mr. Schiff
+
+
 ### About the Club
 
 We are open to high school students with no coding experience to advanced coders. This year club members will be exposed to basic *HTML, CSS and the mutifaceted Javascript.* 
