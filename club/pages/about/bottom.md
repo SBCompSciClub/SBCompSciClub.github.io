@@ -5,10 +5,10 @@
 
 
 ### Contact US
-Feel free to contact us if you have any questions, comments or concerns.
-Email: sbcompsciclub@gmail.com
-Remind: Text 81010 @sbcompsci
-Reach out to one of our officers or Mr. Schiff
+Feel free to contact us if you have any questions, comments or concerns.<br>
+Email: sbcompsciclub@gmail.com <br>
+Remind: Text 81010 @sbcompsci <br>
+Reach out to one of our officers or Mr. Schiff <br>
 
 
 ### About the Club
