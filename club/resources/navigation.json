@@ -54,6 +54,12 @@
             "directory": "/club/pages/advanced/tutorials/",
             "component": "generic"
         },
+        "Advanced Tutorials JS Intro": {
+            "visible": "none",
+            "routing": "/advanced/tutorials/01",
+            "directory": "/club/pages/advanced/tutorials/01/",
+            "component": "generic"
+        },
         "Advanced Demos": {
             "visible": "none",
             "routing": "/advanced/demos",
