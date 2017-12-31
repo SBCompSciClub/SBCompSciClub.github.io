@@ -16,22 +16,22 @@ function main()
     canvasElement.onmousedown = (event) =>
     {
         mouseDown = true;
-        Draw();
+        Draw(event);
     }
     canvasElement.onmousemove = (event) =>
     {
         if (mouseDown)
         {
-            Draw();
+            Draw(event);
         }    
     }
     canvasElement.onmouseup = (event) =>
     {
         mouseDown = false;
-        Draw();
+        Draw(event);
     }
 }
-function Draw()
+function Draw(event)
 {
     canvasContext.beginPath();
     canvasContext.arc(event.x, event.y, ARC_RADIUS, 0, Math.PI * 2);
