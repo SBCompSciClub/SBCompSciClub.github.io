@@ -4,9 +4,9 @@ Fortunately for you, the Computer Science Club meets twice a month on thursday. 
 - <font style="color: gray;">October 26, 2017</font>
 - <font style="color: gray;">November 16, 2017</font>
 - <font style="color: gray;">November 30, 2017</font>
-- <font style="color: green;">December 14, 2017</font>
-- January 4, 2018
-- January 18, 2018
+- <font style="color: gray;">December 14, 2017</font>
+- <font style="color: rgb(150, 0, 0);"><strike>January 4, 2018</strike></font>
+- <font style="color: green">January 18, 2018</font>
 - February 1, 2018
 - February 15, 2018
 - March 1, 2018
