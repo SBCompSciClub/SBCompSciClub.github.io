@@ -1,0 +1,26 @@
+{
+    "windows": [
+        {
+            "title": "About",
+            "html": "/resources/windows/about/index.html",
+            "icon": "resources/windows/about/icon.ico",
+            "width": 300,
+            "height": 100
+        },
+        {
+            "title": "Audio 01",
+            "html": "/resources/windows/audio01/index.html",
+            "icon": "resources/windows/audio01/icon.png",
+            "width": 400,
+            "height": 310
+        },
+        {
+            "title": "Chat",
+            "html": "/resources/windows/chat/index.html",
+            "icon": "resources/windows/chat/icon.png",
+            "width": 300,
+            "height": 300,
+            "maxWin": 1
+        }
+    ]
+}

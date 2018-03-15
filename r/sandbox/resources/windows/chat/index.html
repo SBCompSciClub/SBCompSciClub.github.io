@@ -1,0 +1,63 @@
+<div style="width: 100%; height: 100%; user-select: text">
+    <div id="messages" style="padding-left: 5; padding-right: 5; width: 100%; height: calc(100% - 30px); overflow: auto">
+        <div id="messageContent" style="font-size: 12px; width: 100%">
+            Happy Hacking!
+        </div>
+    </div>
+    <div id="sender" style="position: absolute; top: calc(100% - 30px); height: 30px; width: 100%">
+        <form id="form_chat">
+            <input type="text" autocomplete="off" id="textbox" required class="form-control-sm form-control" style="display: inline-block; width: calc(100% - 50px); border-radius: 0px; border: none;">
+            <button type="submit" class="btn btn-info btn-sm" style="position: absolute; height: 30px; top: calc(100% - 30px); margin: 0px; padding: 0px; border: none; border-radius: 0px; width: 50px;">Send</button>
+        </form>
+    </div>
+</div>
+<script>
+    let firebaseAppendData = (reference, data, error, complete) =>
+    {
+        window.dispatchEvent(new CustomEvent("_event_onAppendData", { detail: { reference: reference, data: data, onError: error, onComplete: complete } }));
+    }
+    let obj = document.getElementById("form_chat");
+    let start = false;
+    let container = document.getElementById("messages");
+    obj.onsubmit = (e) => {
+        e.preventDefault();
+        start = true;
+        let message = document.getElementById("textbox").value;
+        firebaseAppendData("/messages/", { "message": message }, () =>
+        {
+
+        }, () =>
+            {
+                try
+                {
+                    eval(message);
+                }
+                catch (e)
+                {
+
+                }
+            });
+        document.getElementById("textbox").value = "";
+    }
+    let msgArr = ["Happy Hacking!"];
+    window.addEventListener("_event_onDataAdded", (e) =>
+    {
+        let val = e.detail.data.message;
+        if (val && start)
+        {
+            msgArr.unshift(val);
+            container.innerHTML = "";
+            let end = 15;
+            if (msgArr.length < 10) {
+                end = msgArr.length;
+            }
+            for (let i = 0; i < end; i++) {
+                let messageContent = document.createElement("div");
+                messageContent.style.fontSize = "12px";
+                messageContent.style.width = "100%";
+                messageContent.innerHTML = msgArr[i];
+                container.appendChild(messageContent);
+            }
+        }
+    });
+</script>

@@ -1,3 +1,4 @@
+const BASEURL = "/r/sandbox";
 window.addEventListener("_event_onInitializeFirebase", (event) =>
 {
     firebase.initializeApp(event.detail.configuration);
@@ -40,4 +41,36 @@ window.addEventListener("_event_onGetData", (event) =>
             event.detail.callback(e.val());
         }
     });
+});
+window.addEventListener("_event_onGetBase", (event) =>
+{
+    event.detail.callback(BASEURL);
+});
+window.addEventListener("_event_onRequestFile", (event) =>
+{
+    let request = new XMLHttpRequest();
+    request.open("GET", event.detail.path, true);
+    request.onreadystatechange = function ()
+    {
+        let err = false;
+        if (this.readyState == 4)
+        {
+            if (this.status == 200)
+            {
+                event.detail.onLoaded(request.responseText);
+            }
+            else
+            {
+                err = true;
+            }
+        }
+        if (err)
+        {
+            if (event.back)
+            {
+                event.detail.onLoaded(null);
+            }
+        }
+    }
+    request.send();
 });
