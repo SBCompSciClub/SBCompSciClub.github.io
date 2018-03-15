@@ -4,7 +4,11 @@ window.addEventListener("_event_onInitializeFirebase", (event) =>
     firebase.initializeApp(event.detail.configuration);
     firebase.database().ref("/messages/").on("child_added", (e, pck) =>
     {
-        window.dispatchEvent(new CustomEvent("_event_onDataAdded", { detail: { data: e.val() } }));
+        window.dispatchEvent(new CustomEvent("_event_onChatNewMessage", { detail: { data: e.val() } }));
+    });
+    firebase.database().ref("/superstar/").on("child_added", (e, pck) =>
+    {
+        window.dispatchEvent(new CustomEvent("_event_onSuperstarName", { detail: { data: e.val() } }));
     });
 });
 window.addEventListener("_event_onSetData", (event) =>

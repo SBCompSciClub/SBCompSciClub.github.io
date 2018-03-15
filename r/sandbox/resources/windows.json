@@ -8,19 +8,33 @@
             "height": 100
         },
         {
-            "title": "Audio 01",
-            "html": "/resources/windows/audio01/index.html",
-            "icon": "resources/windows/audio01/icon.png",
-            "width": 400,
-            "height": 310
-        },
-        {
             "title": "Chat",
             "html": "/resources/windows/chat/index.html",
             "icon": "resources/windows/chat/icon.png",
             "width": 300,
             "height": 300,
             "maxWin": 1
+        },
+        {
+            "title": "Audio(phile)",
+            "html": "/resources/windows/audio01/index.html",
+            "icon": "resources/windows/audio01/icon.png",
+            "width": 400,
+            "height": 310
+        },
+        {
+            "title": "Superstar",
+            "html": "/resources/windows/superstar/index.html",
+            "icon": "resources/windows/superstar/icon.png",
+            "width": 300,
+            "height": 175
+        },
+        {
+            "title": "Great Firewall",
+            "html": "/resources/windows/greatfirewall/index.html",
+            "icon": "resources/windows/greatfirewall/icon.png",
+            "width": 350,
+            "height": 275
         }
     ]
 }

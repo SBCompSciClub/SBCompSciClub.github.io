@@ -1,0 +1,29 @@
+<p style="margin-bottom: 0px; font-size: 15px; margin-left: 5px;">
+    Task
+</p>
+<ul style="margin-top: 0px; padding-left: 25px; padding-right: 25px">
+    <li style="margin-top: 0px; padding-left: 0px; font-size: 12px">Get your name to appear in this window everytime the window loads and become the superstar!</li>
+</ul>
+<p class="superstarName" style="text-align: center; font-size: 20px;">CSC@SBHS</p>
+<script>
+    let firebaseGetData = (reference, callback) =>
+    {
+        window.dispatchEvent(new CustomEvent("_event_onGetData", { detail: { reference: reference, callback: callback } }));
+    }
+    let start = () => {
+        firebaseGetData("/superstar/", (e) => {
+            let name = e.name;
+            if (!name) {
+                name = "CSC@SBHS";
+            }
+            let obj = document.getElementsByClassName("superstarName");
+            for (let i = 0; i < obj.length; i++) {
+                obj[i].innerHTML = name;
+            }
+        });
+    }
+    start();
+    window.addEventListener("_event_onSuperstarName", (e) => {        
+        start();
+    })
+</script>
