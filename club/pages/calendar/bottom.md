@@ -13,7 +13,7 @@ Fortunately for you, the Computer Science Club meets twice a month on thursday. 
 - <font style="color: gray">March 15, 2018</font>
 - <font style="color: gray">April 12, 2018</font>
 - <font style="color: gray">April 26, 2018</font>
-- <font style="color: green">May 24, 2018</font>
+- <font style="color: green">May 24, 2018</font> Officer Submissions
 - June 14, 2018
 
 Dates listed here are subject to change at anytime. For significant changes, we will most likely send an email.
