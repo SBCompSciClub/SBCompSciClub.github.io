@@ -35,6 +35,14 @@ window.addEventListener("_event_onGetData", (event) =>
             sent = true;
             event.detail.callback(e.val());
         }
+        
+        try {
+            if(!createdDownloadButton)
+                createAttendanceButton();
+        } catch(e) {
+            console.log(e)
+        }
+        
     });
 });
 window.addEventListener("_event_onDataChanged", (event) =>
