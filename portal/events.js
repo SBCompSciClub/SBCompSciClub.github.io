@@ -27,36 +27,14 @@ window.addEventListener("_event_onUpdateData", (event) =>
 });
 window.addEventListener("_event_onGetData", (event) =>
 {
-    let sent = false;
-    firebase.database().ref(event.detail.reference).on("value", (e) =>
+    firebase.database().ref(event.detail.reference).once("value", (e) =>
     {
-        if (!sent)
-        {
-            sent = true;
-            event.detail.callback(e.val());
-        }
-        
-        try {
-            if(!createdDownloadButton)
-                createAttendanceButton();
-        } catch(e) {
-            console.log(e)
-        }
-        
+        event.detail.callback(e.val());
     });
 });
 window.addEventListener("_event_onDataChanged", (event) =>
 {
-    let ref = firebase.database().ref(event.detail.reference);
-    ref.on("child_added", (e) =>
-    {
-        event.detail.callback();
-    });
-    ref.on("child_changed", (e) =>
-    {
-        event.detail.callback();
-    });
-    ref.on("child_removed", (e) =>
+    firebase.database().ref(event.detail.reference).on("value", (e) =>
     {
         event.detail.callback();
     });
