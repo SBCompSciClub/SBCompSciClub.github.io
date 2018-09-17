@@ -17,6 +17,7 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Linking to the Navigation](#linking-to-the-navigation)
     - [Content](#content)
 - [Portal](#portal)
+    - [Authentication](#authentication)
     - [Views](#views)
     - [Edit Defaults and Custom Views](#edit-defaults-and-custom-views)
     - [Equations and Boolean Checking](#equations-and-boolean-checking)
@@ -184,8 +185,13 @@ Paragraph
 <Button style="position: absolute; top: 0px; left: 0px" onclick="alert('You clicked me');">New Button</Button>
 ```
 > Yes, this can get overwhelmingly annoying if your trying to do something intense, but thats the price for modularity
+
 ## Portal
 This is the portal that the computer science club officers log into.
+
+### Authentication
+Sign in with the account was created by you. If you ever forget your password, send yourself a password change email via firebase, or ask the awesome amazing cool developer who is currently managing the portal.
+
 ### Views
 The current view determines what information is dumped onto the table. The default views are shown in View -> [View Name]. You can switch to any of these views simply by clicking on any of them. The complete view just contains all the information in the database.
 
