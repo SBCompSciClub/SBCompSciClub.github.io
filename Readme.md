@@ -181,7 +181,7 @@ Paragraph
 ### SPA Redirection (GitHub)
 Consider the following example
 ```
-You want to host something completely seperate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server). 
+You want to host something completely seperate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server).
 ```
 This doesn't work. Unfortuantely, GitHub directs every request after `sbcompsciclub.github.io` to the single page application (SPA) defined at root as `index.html`. While this means the URL handling will strictly work properly through the SPA, it also renders other static page links useless. A request to `https://sbcompsciclub.github.io/path/to/your/static/page` will be directed to `index.html` instead of `/path/to/your/static/page`.
 - A simple bypass to this problem is by hosting your static page on another server and linking to it by creating a page and `<iframe>`ing it in.
