@@ -43,7 +43,11 @@ cd sbcompsciclub.github.io
 ```
 
 - Start the development environment
-> It is recommended that you use an Apache server if possible, since it provides more consistent results
+
+```BAT
+npx http-server
+```
+or the Python method (now depreciated due to the lack of consistency on some machines) 
 ```BAT
 python3 server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
 ```
@@ -176,6 +180,62 @@ Paragraph
 <Button style="position: absolute; top: 0px; left: 0px" onclick="alert('You clicked me');">New Button</Button>
 ```
 > Yes, this can get overwhelmingly annoying if your trying to do something intense, but thats the price for modularity
+
+## Portal
+This is the portal that the computer science club officers log into.
+
+### Authentication
+Sign in with the account was created by you. If you ever forget your password, send yourself a password change email via firebase, or ask the awesome amazing cool developer who is currently managing the portal.
+
+### Views
+The current view determines what information is dumped onto the table. The default views are shown in View -> [View Name]. You can switch to any of these views simply by clicking on any of them. The complete view just contains all the information in the database.
+
+### Edit Defaults and Custom Views
+If you want to edit the default views that are stored, go to View -> Edit Defaults and type in which view you want to edit. Here a table will be displayed. Editing the database routing will change what values are being displayed for each student. Here you can put in a database routing, equations, or boolean checking, depending on what you need. Editing the header column will change the header of the column in that view when it is loaded up. If you want to create a new view, just put a view name that has not been taken. If you want to delete a view, click the Delete View button after typing in the view name.
+
+You can also use a custom view. Using a custom view allows you to see the information that you want to see, but it does not edit the default views. So if you want to quickly see everyone's first name, you can use a custom view and make a row with a header of `First Name` and a database routing of `name.first`.
+
+### Equations and Boolean Checking
+If you would like to add string or numbers, you can use an equation. To use an equation, just add an equal sign before the equation when inputting the database routing. For example, `=5+5` would yield 10 for every student. Now to access values from the database, simply put the routing in for them. If you wanted to show the full name of each student, then using `=Full+Name:+name.first+name.last`. This would give the full name of each student without a space in between. If you want to add a space, use the #s special character. You can add integers or strings from the database or by hardcoding the value. To get the length of anything use the .count "method." By using `=attendance.count` it will return the amount of days that each student has come to the club since the attendance object is a JSON object with every meeting the student has come to.
+
+Using boolean checking is something that would be useful for checking if a student should get club credit. This can be done by using the ? symbol. To check if each student came more than 8 meetings, just use `?{attendance.count}>8`. This will return true if they came to more than eight meetings. Anything put into the curly braces will be fed into the same function that evaluates the `=` expressions. So, if you want to use database routing then use the curly braces. Logical operators are also supported on this since it is fed into an eval function. `?5<8 && 9>0` will be true every time.
+**
+Be careful what you put into the checking function since it can be accidently used to inject JavaScript code.
+**
+
+### Adding / Removing a Member
+
+Adding a member is quick and easy by going to data and then clicking add member. Here fill out the basic information such as first and last name and school id. This will put them into our database as a new student.
+
+Removing a member is just as easy by going to data and then clicking removing member. Here fill out the students id number and then click remove.
+
+### Adding fields
+
+Adding fields are useful to keep track of attendance of each member. To add a field, go to Field -> Add. Here put the database routing that you want to change or add, put the value you want to set it to, and enter the id for the member that you want to do this for. To take attendance, add a field to the attendance object with the a key of the date and a value of where the meeting is being held. For example,
+ ```
+Database Routing: attendance.10-26-18
+Value: DLC
+SBID: 10000000
+ ```
+would signify that the student with the id 10000000 came to the meeting in the DLC on 10-26-18. Adding fields can also be used for editing names, or adding contact information.
+
+### Importing and Exporting
+To import a csv file to override the values in the database use the Data -> Import CSV button and choose the file.
+
+To export, use the drop down menu named Export. There will be two options. One will be to download whatever you are currently viewing on the table as csv. The file will be named whatever the view is named. The other option will download a text file with the students that should get credit formatted in the correct way to hand in to the school.
+
+### Current year
+
+You can switch the year that you are viewing by going to Data -> View Next/Previous Year
+
+The year you are viewing is shown to the left of the Refresh Button. If you click it, then it will increment the year up by one.
+
+### Other
+The Sign Out button will sign you out.
+
+The Refresh button will refresh that data you are viewing.
+
+The Remove Member and Graph functionalities have not been implemented yet.
 
 ## Known Issues
 ### SPA Redirection (GitHub)
