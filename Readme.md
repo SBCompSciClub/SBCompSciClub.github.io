@@ -234,6 +234,8 @@ The Refresh button will refresh that data you are viewing.
 
 The Remove Member and Graph functionalities have not been implemented yet.
 
+You can switch the year that you are viewing by going to Data -> View Next/Previous Year
+
 ## Known Issues
 
 ### SPA Redirection (GitHub)
