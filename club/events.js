@@ -15,7 +15,7 @@ window.addEventListener("_event_onRequestFile", (event) =>
             else
             {
                 err = true;
-            }    
+            }
         }
         if (err)
         {
@@ -24,7 +24,7 @@ window.addEventListener("_event_onRequestFile", (event) =>
             {
                 event.detail.onLoaded(null);
             }
-        }    
+        }
     }
     request.send();
 });
