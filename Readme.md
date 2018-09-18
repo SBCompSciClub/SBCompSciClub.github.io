@@ -208,9 +208,11 @@ Using boolean checking is something that would be useful for checking if a stude
 Be careful what you put into the checking function since it can be accidently used to inject JavaScript code.
 **
 
-### Adding a Member
+### Adding / Removing a Member
 
 Adding a member is quick and easy by going to data and then clicking add member. Here fill out the basic information such as first and last name and school id. This will put them into our database as a new student.
+
+Removing a member is just as easy by going to data and then clicking removing member. Here fill out the students id number and then click remove.
 
 ### Adding fields
 
@@ -227,14 +229,18 @@ To import a csv file to override the values in the database use the Data -> Impo
 
 To export, use the drop down menu named Export. There will be two options. One will be to download whatever you are currently viewing on the table as csv. The file will be named whatever the view is named. The other option will download a text file with the students that should get credit formatted in the correct way to hand in to the school.
 
+### Current year
+
+You can switch the year that you are viewing by going to Data -> View Next/Previous Year
+
+The year you are viewing is shown to the left of the Refresh Button. If you click it, then it will increment the year up by one.
+
 ### Other
 The Sign Out button will sign you out.
 
 The Refresh button will refresh that data you are viewing.
 
 The Remove Member and Graph functionalities have not been implemented yet.
-
-You can switch the year that you are viewing by going to Data -> View Next/Previous Year
 
 ## Known Issues
 
