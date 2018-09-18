@@ -43,9 +43,9 @@ cd sbcompsciclub.github.io
 ```
 
 - Start the development environment
-
+> It is recommended that you use an Apache server if possible, since it provides more consistent results
 ```BAT
-python server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
+python3 server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
 ```
 
 > `server.min.py` is an included python script. Further documentation for this script can be found [here](https://github.com/shivanmodha/Python-Tools). If you run into some issues, make sure you have python correctly linked in your system's environmental variables (see [System Variables](https://www.computerhope.com/issues/ch000549.htm). This server script is included for your convience, but any server should work (i.e. apache tomcat, node.js).
@@ -181,7 +181,7 @@ Paragraph
 ### SPA Redirection (GitHub)
 Consider the following example
 ```
-You want to host something completely seperate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server). 
+You want to host something completely seperate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server).
 ```
 This doesn't work. Unfortuantely, GitHub directs every request after `sbcompsciclub.github.io` to the single page application (SPA) defined at root as `index.html`. While this means the URL handling will strictly work properly through the SPA, it also renders other static page links useless. A request to `https://sbcompsciclub.github.io/path/to/your/static/page` will be directed to `index.html` instead of `/path/to/your/static/page`.
 - A simple bypass to this problem is by hosting your static page on another server and linking to it by creating a page and `<iframe>`ing it in.
