@@ -5,7 +5,7 @@ let target = "";
 let frame = null;
 let k = false;
 
-function activateEasterEgg(state){
+function activateScripts(state){
 
 	switch(state){
 		case 'home':
@@ -77,8 +77,10 @@ function activateEasterEgg(state){
 			}
 			break;
 		case 'signup':
+		setFormValidation();    //Form Validation
+		/////////////////////////////////////////
 	setTimeout( ()=>{
-			frame = document.querySelector(".lead");
+			frame = document.querySelector("form");
 			if(frame !== undefined){
 				target = "EASTER EGG";
 				window.onkeydown = (event)=>{
