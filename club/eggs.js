@@ -9,7 +9,7 @@ function activateEasterEgg(state){
 
 	switch(state){
 		case 'home':
-			p = document.getElementsByClassName("display-3")[1]
+			p = document.getElementsByClassName("display-3")[0]
 			if(p !== undefined){	
 				p.onmouseup = (event)=>{mk.rickroll()};
 			}
