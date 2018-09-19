@@ -10,12 +10,12 @@ function activateEasterEgg(state){
 	switch(state){
 		case 'home':
 			p = document.getElementsByClassName("display-3")[0]
-			if(p !== undefined){	
+			if(p !== undefined){
 				p.onmouseup = (event)=>{mk.rickroll()};
 			}
 			break;
 		case 'beginner':
-			target = "38,38,40,40,37,39,37,39,66,65,32"; 
+			target = "38,38,40,40,37,39,37,39,66,65,32";
 			window.onkeyup = (event)=>{
 				let key = event.which || event.charCode;
 				logger.push(key);
@@ -25,12 +25,12 @@ function activateEasterEgg(state){
 					alert("Were you expecting some kind of reward for this?");
 					logger = [];
 				}
-			}, 1000/30);			
+			}, 1000/30);
 			break;
 		case 'advanced':
-			p = document.getElementsByClassName("display-3")[0];	
+			p = document.getElementsByClassName("display-3")[0];
 			if(p !== undefined){
-				
+
 				p.onmouseenter = (event)=>{
 					p.style.fontSize = "14px";
 					let color = `hsl(${Math.floor(Math.random()*360)}, 70%, 70%)`;
@@ -39,14 +39,14 @@ function activateEasterEgg(state){
 					if(Math.random() < 0.05){
 						text = "iOS is better";
 					}
-					mk.rewrite(p, mk.asciiArt(text, "#")); 
+					mk.rewrite(p, mk.asciiArt(text, "#"));
 				}
 				p.onmouseleave = (event)=>{
 					p.style.fontSize = "";
 					p.style.color = "";
 					mk.rewrite(p, "Advanced Portal");
 				}
-				
+
 			}
 			break;
 		case 'about':
@@ -76,11 +76,11 @@ function activateEasterEgg(state){
 				}
 			}
 			break;
-		case 'signup':	
+		case 'signup':
 	setTimeout( ()=>{
 			frame = document.querySelector(".lead");
 			if(frame !== undefined){
-				target = "EASTER EGG"; 
+				target = "EASTER EGG";
 				window.onkeydown = (event)=>{
 					let key = String.fromCharCode(event.which || event.charCode);
 					logger.push(key);
@@ -92,7 +92,7 @@ function activateEasterEgg(state){
 						mk.animateBox(frame, 300, 800, 300, 1000, 100, 20);
 						logger = [];
 					}
-				}, 1000/30);			
+				}, 1000/30);
 			}
 	}, 100);
 			break;
