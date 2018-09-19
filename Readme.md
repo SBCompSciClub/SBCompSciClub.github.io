@@ -16,6 +16,16 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Bottom vs Top](#bottom-vs-top)
     - [Linking to the Navigation](#linking-to-the-navigation)
     - [Content](#content)
+    - [Portal](#portal)
+        - [Authentication](#authentication)
+        - [Views](#views)
+        - [Edit Defaults and Custom Views](#edit-defaults-and-custom-views)
+        - [Equations and Boolean Checking](#equations-and-boolean-checking)
+        - [Adding a Member](#adding-a-member)
+        - [Adding Fields](#adding-fields)
+        - [Importing and Exporting](#importing-and-exporting)
+        - [Graphing](#graphing)
+        - [Other](#other)
 - [Known Issues](#known-issues)
 ## Project Structure
 - bootstrap/
@@ -47,7 +57,7 @@ cd sbcompsciclub.github.io
 ```BAT
 npx http-server
 ```
-or the Python method (now depreciated due to the lack of consistency on some machines) 
+or the Python method (now depreciated due to the lack of consistency on some machines)
 ```BAT
 python3 server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
 ```
@@ -230,20 +240,23 @@ You can switch the year that you are viewing by going to Data -> View Next/Previ
 
 The year you are viewing is shown to the left of the Refresh Button. If you click it, then it will increment the year up by one.
 
+### Graphing
+
+When you click the `Graph` button a graph of the attendance throughout the past year shows up. The graph includes how many people came on each day, and how many of each grade level came. You can toggle the bar graphs or line graph by clicking the buttons above the graph. For example, by clicking freshman, you will toggle the freshman bar graph.
+
 ### Other
 The Sign Out button will sign you out.
 
 The Refresh button will refresh that data you are viewing.
 
-The Remove Member and Graph functionalities have not been implemented yet.
 
 ## Known Issues
 ### SPA Redirection (GitHub)
 Consider the following example
 ```
-You want to host something completely seperate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server).
+You want to host something completely separate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server).
 ```
-This doesn't work. Unfortuantely, GitHub directs every request after `sbcompsciclub.github.io` to the single page application (SPA) defined at root as `index.html`. While this means the URL handling will strictly work properly through the SPA, it also renders other static page links useless. A request to `https://sbcompsciclub.github.io/path/to/your/static/page` will be directed to `index.html` instead of `/path/to/your/static/page`.
+This doesn't work. Unfortunately, GitHub directs every request after `sbcompsciclub.github.io` to the single page application (SPA) defined at root as `index.html`. While this means the URL handling will strictly work properly through the SPA, it also renders other static page links useless. A request to `https://sbcompsciclub.github.io/path/to/your/static/page` will be directed to `index.html` instead of `/path/to/your/static/page`.
 - A simple bypass to this problem is by hosting your static page on another server and linking to it by creating a page and `<iframe>`ing it in.
 - A long term solution would be to host the SPA in a subdirectory, instead of on the root
     - This solution must be implemented through React, and will almost 100% break everything for the first week, until we can relink all resources.
