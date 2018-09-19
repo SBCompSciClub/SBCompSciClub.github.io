@@ -14,7 +14,7 @@ window.addEventListener("_event_onRequestFile", (event) =>
             {
                 event.detail.onLoaded(request.responseText);
 				state = event.detail.path.split("/")[3];
-				activateEasterEgg(state);
+				activateScripts(state);
             }
             else
             {
