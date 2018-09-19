@@ -5,7 +5,7 @@ let target = "";
 let frame = null;
 let k = false;
 
-function activateEasterEgg(state){
+function activateScripts(state){
 
 	switch(state){
 		case 'home':
