@@ -16,7 +16,7 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Bottom vs Top](#bottom-vs-top)
     - [Linking to the Navigation](#linking-to-the-navigation)
     - [Content](#content)
-    - [Page-specific Scripts] (#page-specific-scripts)
+    - [Page-specific Scripts](#scripts-for-specific-pages)
 - [Portal](#portal)
     - [Authentication](#authentication)
     - [Views](#views)
@@ -192,8 +192,8 @@ Paragraph
 ```
 > Yes, this can get overwhelmingly annoying if your trying to do something intense, but thats the price for modularity
 
-### Page-specific Scripts
-Because you can't do page-specific scripts in the dynamically loaded `HTML` and Markdown files, you have to use the `scripts.js` file. (Any page for which you want to run a specific script needs its own case in that file.) If your script in in its own file, load that in `/club/index.html`. You can then go into `scripts.js`, find the case in the `switch` statement corresponding to your desired page, and then activate your script there.
+### Scripts for Specific Pages
+Because you can't do page-specific scripts in the dynamically loaded `HTML` and Markdown files, you have to use the `scripts.js` file. (Any page for which you want to run a specific script needs its own case in that file.) If your script is in its own file, load that in `/club/index.html`. You can then go into `scripts.js`, find the case in the `switch` statement corresponding to your desired page, and then activate your script there.
 #### Guidelines for page-specific scripts
 Try to keep your script entirely within a single function, and activate that function in the appropriate location.
 If you plan to target a particular element, here's my recommended strategy: The first line of your function should grab that element and assign it to a variable. The remainder of the script should execute only if that variable is defined, so that you know the element has loaded.
