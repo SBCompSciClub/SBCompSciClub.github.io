@@ -194,6 +194,7 @@ Paragraph
 
 ### Scripts for Specific Pages 
 > Note: This feature is currently in a different branch; I accidentally updated the wrong README
+
 Because you can't do page-specific scripts in the dynamically loaded `HTML` and Markdown files, you have to use the `scripts.js` file. (Any page for which you want to run a specific script needs its own case in that file.) If your script is in its own file, load that in `/club/index.html`. You can then go into `scripts.js`, find the case in the `switch` statement corresponding to your desired page, and then activate your script there.
 #### Guidelines for page-specific scripts
 Try to keep your script entirely within a single function, and activate that function in the appropriate location.
