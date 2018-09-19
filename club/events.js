@@ -13,9 +13,7 @@ window.addEventListener("_event_onRequestFile", (event) =>
             if (this.status == 200)
             {
                 event.detail.onLoaded(request.responseText);
-				console.log(event.detail.path);
 				state = event.detail.path.split("/")[3];
-				console.log(`State: ${state}`);
 				activateEasterEgg(state);
             }
             else
