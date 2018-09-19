@@ -1,4 +1,6 @@
 const BASEURL = "/club";
+let state = "home";
+
 window.addEventListener("_event_onRequestFile", (event) =>
 {
     let request = new XMLHttpRequest();
@@ -11,6 +13,10 @@ window.addEventListener("_event_onRequestFile", (event) =>
             if (this.status == 200)
             {
                 event.detail.onLoaded(request.responseText);
+				console.log(event.detail.path);
+				state = event.detail.path.split("/")[3];
+				console.log(`State: ${state}`);
+				activateEasterEgg(state);
             }
             else
             {
@@ -19,7 +25,7 @@ window.addEventListener("_event_onRequestFile", (event) =>
         }
         if (err)
         {
-            console.log("ERROR");
+            console.log("ERROR", this.status, event.detail.path);
             if (event.back)
             {
                 event.detail.onLoaded(null);

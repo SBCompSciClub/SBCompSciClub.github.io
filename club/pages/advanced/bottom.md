@@ -1,4 +1,4 @@
-# Advanced Portal
+# Advanced Portal :D :D :D
 ## Welcome
 Welcome to the advanced portal! Here, you can find source code, examples, and tutorials.
 <div style="background-color: rgba(255, 255, 255, 0.25); height: 1px; width: 100%; padding-top: 0px; border-radius: 100px;"></div>
