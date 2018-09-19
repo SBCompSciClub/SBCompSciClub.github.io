@@ -610,17 +610,17 @@ select.form-element-field {
                                 <span>Freshmen</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=grade class="form-radio-field" type="radio" value="sophomore" />
+                                <input name="grade" class="form-radio-field" type="radio" value="sophomore" />
                                 <i class="form-radio-button"></i>
                                 <span>Sophomore</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=grade class="form-radio-field" type="radio" value="junior" />
+                                <input name="grade" class="form-radio-field" type="radio" value="junior" />
                                 <i class="form-radio-button"></i>
                                 <span>Junior</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=grade class="form-radio-field" type="radio" value="senior" />
+                                <input name="grade" class="form-radio-field" type="radio" value="senior" />
                                 <i class="form-radio-button"></i>
                                 <span>Senior</span>
                             </label>
@@ -629,12 +629,12 @@ select.form-element-field {
                                 <div class="form-radio-legend ap-txt form-title">Beginner or Advanced Section:</div>
                                 <br>
                                 <label class="form-radio-label">
-                                    <input name=section class="form-radio-field" type="radio" value="beginner" />
+                                    <input name="section" class="form-radio-field" type="radio" value="beginner" />
                                     <i class="form-radio-button"></i>
                                     <span>Beginner</span>
                                 </label>
                                 <label class="form-radio-label">
-                                    <input name=section class="form-radio-field" type="radio" value="beginner" />
+                                    <input name="section" class="form-radio-field" type="radio" value="beginner" />
                                     <i class="form-radio-button"></i>
                                     <span>Advanced</span>
                                 </label>
@@ -647,35 +647,6 @@ select.form-element-field {
 <script>
     //TODO: DISABLE BOOTSTRAP SUBMIT FUNCTION, IF NOT OUR FUNCTION WONT WORK
     //TEMP: RUN 'submit()' on the console
-
-    let radioCheck = (theRadio,saveVal) => {
-        for (let i = 0, length = theRadio.length; i < length; i++) {
-    if (radios[i].checked) {
-        saveVal = radios[i].value;
-        break;
-    }
-}
-    };
-
-let submit = () => {
-    console.log('submit function has been triggered');
-    let gradeRadio = document.getElementsByName('grade'),
-     theGrade, //Grade vale (returned as 'freshmen' etc.)
-     sectionRadio = document.getElementsByName('section'),
-     theSection, //Section value (returned as 'beginner' or 'beginner')
-     firstName = document.getElementById('first-name').value, // First name as string
-     lastName = document.getElementById('last-name').value,// Last name as string
-     theEmail = document.getElementById('email').value, //Email as string
-     theId = document.getElementById('id-num').value; //Id as int
-     if (theId.length == 8){
-        radioCheck(gradeRadio,theGrade);
-        radioCheck(sectionRadio,theSection);
-    //FIREBASE CODE SHOULD BE HERE
-
-
-     }else{
-         alert('Not valid SBHS ID number')
-     }
-};
-document.getElementById('subbBtn').addEventListener('click', submit);
+	
+//**************THE ABOVE SHOULD BE RESOLVED NOW******************
 </script>

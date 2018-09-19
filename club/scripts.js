@@ -77,8 +77,10 @@ function activateEasterEgg(state){
 			}
 			break;
 		case 'signup':
+		setFormValidation();    //Form Validation
+		/////////////////////////////////////////
 	setTimeout( ()=>{
-			frame = document.querySelector(".lead");
+			frame = document.querySelector("form");
 			if(frame !== undefined){
 				target = "EASTER EGG";
 				window.onkeydown = (event)=>{
