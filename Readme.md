@@ -16,15 +16,6 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Bottom vs Top](#bottom-vs-top)
     - [Linking to the Navigation](#linking-to-the-navigation)
     - [Content](#content)
-- [Portal](#portal)
-    - [Authentication](#authentication)
-    - [Views](#views)
-    - [Edit Defaults and Custom Views](#edit-defaults-and-custom-views)
-    - [Equations and Boolean Checking](#equations-and-boolean-checking)
-    - [Adding a Member](#adding-a-member)
-    - [Adding Fields](#adding-fields)
-    - [Importing and Exporting](#importing-and-exporting)
-    - [Other](#other)
 - [Known Issues](#known-issues)
 ## Project Structure
 - bootstrap/
@@ -54,7 +45,11 @@ cd sbcompsciclub.github.io
 - Start the development environment
 
 ```BAT
-python server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
+npx http-server
+```
+or the Python method (now depreciated due to the lack of consistency on some machines) 
+```BAT
+python3 server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
 ```
 
 > `server.min.py` is an included python script. Further documentation for this script can be found [here](https://github.com/shivanmodha/Python-Tools). If you run into some issues, make sure you have python correctly linked in your system's environmental variables (see [System Variables](https://www.computerhope.com/issues/ch000549.htm). This server script is included for your convience, but any server should work (i.e. apache tomcat, node.js).
@@ -243,13 +238,12 @@ The Refresh button will refresh that data you are viewing.
 The Remove Member and Graph functionalities have not been implemented yet.
 
 ## Known Issues
-
 ### SPA Redirection (GitHub)
 Consider the following example
 ```
-You want to host something completely separate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server).
+You want to host something completely seperate from this website (an example or demo) on this repository, so you create another directory on the root, and add another index.html page that displays index.js content. Naturally, you think that https://sbcompsciclub.github.io/path/to/your/static/page will direct you to your page (as it does through the development server).
 ```
-This doesn't work. Unfortunately, GitHub directs every request after `sbcompsciclub.github.io` to the single page application (SPA) defined at root as `index.html`. While this means the URL handling will strictly work properly through the SPA, it also renders other static page links useless. A request to `https://sbcompsciclub.github.io/path/to/your/static/page` will be directed to `index.html` instead of `/path/to/your/static/page`.
+This doesn't work. Unfortuantely, GitHub directs every request after `sbcompsciclub.github.io` to the single page application (SPA) defined at root as `index.html`. While this means the URL handling will strictly work properly through the SPA, it also renders other static page links useless. A request to `https://sbcompsciclub.github.io/path/to/your/static/page` will be directed to `index.html` instead of `/path/to/your/static/page`.
 - A simple bypass to this problem is by hosting your static page on another server and linking to it by creating a page and `<iframe>`ing it in.
 - A long term solution would be to host the SPA in a subdirectory, instead of on the root
     - This solution must be implemented through React, and will almost 100% break everything for the first week, until we can relink all resources.

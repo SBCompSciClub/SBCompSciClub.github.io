@@ -1,9 +1,8 @@
 # Beginner Portal
 ## __Welcome to the Beginner Portal!__
-Everyone is welcome! No prior coding experience necessary! You will find all the information covered during our club meetings here! 
+Everyone is welcome! No prior coding experience necessary! You will find all the information covered during our club meetings here!
 
-Meeting Room: Room `200`
-**Currently meeting in the DLC
+Meeting Room: Room `DLC`
 
 Text Editor: Brackets Portable
 
@@ -14,4 +13,4 @@ Review Slide Show - https://drive.google.com/open?id=1vJngt75IP70ks1RI-xMo84NE5K
 **This link will give you everything we covered in our club meeting
 
 # Resources
-Visit https://www.codecademy.com and learn any html or css.
+Watch this <a href="https://www.udacity.com">Udacity</a> Course - <a href="https://www.udacity.com/course/intro-to-html-and-css--ud001" >HTML & CSS powered by AT&T <a>

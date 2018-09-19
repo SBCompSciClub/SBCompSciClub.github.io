@@ -13,7 +13,7 @@ import urllib
 class Handler(http.server.SimpleHTTPRequestHandler):
     ''' Wrapper for http server handler '''
     def log_message(self, _format, *args):
-        return 
+        return
     def do_GET(self):
         urlparts = urllib.parse.urlparse(self.path)
         request_file_path = urlparts.path.strip('/')
