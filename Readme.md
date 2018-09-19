@@ -16,15 +16,16 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Bottom vs Top](#bottom-vs-top)
     - [Linking to the Navigation](#linking-to-the-navigation)
     - [Content](#content)
-- [Portal](#portal)
-    - [Authentication](#authentication)
-    - [Views](#views)
-    - [Edit Defaults and Custom Views](#edit-defaults-and-custom-views)
-    - [Equations and Boolean Checking](#equations-and-boolean-checking)
-    - [Adding a Member](#adding-a-member)
-    - [Adding Fields](#adding-fields)
-    - [Importing and Exporting](#importing-and-exporting)
-    - [Other](#other)
+    - [Portal](#portal)
+        - [Authentication](#authentication)
+        - [Views](#views)
+        - [Edit Defaults and Custom Views](#edit-defaults-and-custom-views)
+        - [Equations and Boolean Checking](#equations-and-boolean-checking)
+        - [Adding a Member](#adding-a-member)
+        - [Adding Fields](#adding-fields)
+        - [Importing and Exporting](#importing-and-exporting)
+        - [Graphing](#graphing)
+        - [Other](#other)
 - [Known Issues](#known-issues)
 ## Project Structure
 - bootstrap/
@@ -54,7 +55,11 @@ cd sbcompsciclub.github.io
 - Start the development environment
 
 ```BAT
-python server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
+npx http-server
+```
+or the Python method (now depreciated due to the lack of consistency on some machines)
+```BAT
+python3 server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
 ```
 
 > `server.min.py` is an included python script. Further documentation for this script can be found [here](https://github.com/shivanmodha/Python-Tools). If you run into some issues, make sure you have python correctly linked in your system's environmental variables (see [System Variables](https://www.computerhope.com/issues/ch000549.htm). This server script is included for your convience, but any server should work (i.e. apache tomcat, node.js).
@@ -208,9 +213,11 @@ Using boolean checking is something that would be useful for checking if a stude
 Be careful what you put into the checking function since it can be accidently used to inject JavaScript code.
 **
 
-### Adding a Member
+### Adding / Removing a Member
 
 Adding a member is quick and easy by going to data and then clicking add member. Here fill out the basic information such as first and last name and school id. This will put them into our database as a new student.
+
+Removing a member is just as easy by going to data and then clicking removing member. Here fill out the students id number and then click remove.
 
 ### Adding fields
 
@@ -227,17 +234,23 @@ To import a csv file to override the values in the database use the Data -> Impo
 
 To export, use the drop down menu named Export. There will be two options. One will be to download whatever you are currently viewing on the table as csv. The file will be named whatever the view is named. The other option will download a text file with the students that should get credit formatted in the correct way to hand in to the school.
 
+### Current year
+
+You can switch the year that you are viewing by going to Data -> View Next/Previous Year
+
+The year you are viewing is shown to the left of the Refresh Button. If you click it, then it will increment the year up by one.
+
+### Graphing
+
+When you click the `Graph` button a graph of the attendance throughout the past year shows up. The graph includes how many people came on each day, and how many of each grade level came. You can toggle the bar graphs or line graph by clicking the buttons above the graph. For example, by clicking freshman, you will toggle the freshman bar graph.
+
 ### Other
 The Sign Out button will sign you out.
 
 The Refresh button will refresh that data you are viewing.
 
-The Remove Member and Graph functionalities have not been implemented yet.
-
-You can switch the year that you are viewing by going to Data -> View Next/Previous Year
 
 ## Known Issues
-
 ### SPA Redirection (GitHub)
 Consider the following example
 ```

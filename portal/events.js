@@ -39,6 +39,10 @@ window.addEventListener("_event_onDataChanged", (event) =>
         event.detail.callback();
     });
 });
+window.addEventListener("_event_onDeleteData", (event) =>
+{
+    firebase.database().ref(event.detail.reference).remove();
+});
 window.addEventListener("_event_onSignIn", (event) =>
 {
     firebase.auth().signInWithEmailAndPassword(event.detail.email, event.detail.password).catch((error) =>
