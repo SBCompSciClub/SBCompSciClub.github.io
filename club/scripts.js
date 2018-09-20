@@ -77,8 +77,6 @@ function activateScripts(state){
 			}
 			break;
 		case 'signup':
-		setFormValidation();    //Form Validation
-		/////////////////////////////////////////
 	setTimeout( ()=>{
 			frame = document.querySelector("form");
 			if(frame !== undefined){
@@ -86,7 +84,6 @@ function activateScripts(state){
 				window.onkeydown = (event)=>{
 					let key = String.fromCharCode(event.which || event.charCode);
 					logger.push(key);
-					console.log(logger);
 				}
 				looper = setInterval( ()=>{
 					if(logger.join("").indexOf(target) >= 0){
