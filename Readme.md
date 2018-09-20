@@ -57,7 +57,7 @@ cd sbcompsciclub.github.io
 ```BAT
 npx http-server
 ```
-or the Python method (now depreciated due to the lack of consistency on some machines)
+or the Python method
 ```BAT
 python3 server.min.py <Host (i.e. 0.0.0.0)> <Port (i.e. 4000)>
 ```
