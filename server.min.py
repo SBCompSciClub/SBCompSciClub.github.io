@@ -29,7 +29,6 @@ def main():
     server_thread = threading.Thread(target=start_server, args=(_host, _port))
     server_thread.daemon = True
     server_thread.start()
-    webbrowser.open("{}:{}".format(_host, _port))
     while True:
         result = input("")
         if result:
