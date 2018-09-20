@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 
 admin.initializeApp();
 
-exports.signUp = functions.database.ref("/signup/{key}").onCreate( (snap, context) => {
+exports.signUp = functions.database.ref("/signup/{key}/").onCreate( (snap, context) => {
     let data = snap.val()[Object.keys(snap.val())[0]];
     let keys = Object.keys(data);
 
