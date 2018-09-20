@@ -18,7 +18,7 @@ let submit = () => {
 	let gradeRadio = document.getElementsByName('grade'),
 	theGrade, //Grade vale (returned as 'freshmen' etc.)
 	sectionRadio = document.getElementsByName('section'),
-	theSection, //Section value (returned as 'beginner' or 'beginner')
+	theSection, //Section value (returned as 'beginner' or 'advanced')
       firstName = document.getElementById('first-name').value, // First name as string
       lastName = document.getElementById('last-name').value,// Last name as string
       theEmail = document.getElementById('email').value, //Email as string
@@ -27,8 +27,8 @@ let submit = () => {
          radioCheck(gradeRadio,theGrade);
          radioCheck(sectionRadio,theSection);
      //FIREBASE CODE SHOULD BE HERE
- 
- 
+
+
       }else{
           alert('Not valid SBHS ID number')
       }
@@ -38,4 +38,3 @@ let submit = () => {
 }
 }
 }
-
