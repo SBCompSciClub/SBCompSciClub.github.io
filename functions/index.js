@@ -4,7 +4,7 @@ const admin = require('firebase-admin');
 admin.initializeApp();
 
 exports.signUp = functions.database.ref("/signup/{key}/").onCreate( (snap, context) => {
-    let data = snap.val()[Object.keys(snap.val())[0]];
+    let data = snap.val();
     let keys = Object.keys(data);
 
     if(keys.includes("email") && keys.includes("name") && keys.includes("id") && Object.keys(data.name).includes("first") && Object.keys(data.name).includes("last"))
@@ -39,7 +39,7 @@ exports.signUp = functions.database.ref("/signup/{key}/").onCreate( (snap, conte
             }
 
             admin.database().ref("/"+year+"/members/"+id).set(member);
-            admin.database().ref("signUp/"+Object.keys(snap.val())[0]);
+            admin.database().ref("signup").remove();
         })
     }
     else
