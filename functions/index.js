@@ -21,25 +21,33 @@ exports.signUp = functions.database.ref("/signup/{key}/").onCreate( (snap, conte
                         year = parseInt(key);
                 }
             });
-            member.contact = {};
-            member.contact.email = data.email;
-            member.name = {};
-            member.name.first = data.name.first;
-            member.name.last = data.name.last;
-            if(data.github)
-                member.contact.github = data.github;
-            if(data.grade)
-                member.grade = data.grade.charAt(0).toUpperCase() + data.grade.slice(1).toLowerCase();
-            if(data.section)
-                member.section = data.section;
-            member.position = "Member";
-            member.requirements = {
-                dues: "$0",
-                ptp: "$0"
+
+            let members = dbVal[year]["members"];
+            console.log(!Object.keys(members).includes(id));
+            if(!Object.keys(members).includes(id))
+            {
+                member.contact = {};
+                member.contact.email = data.email;
+                member.name = {};
+                member.name.first = data.name.first;
+                member.name.last = data.name.last;
+                if(data.github)
+                    member.contact.github = data.github;
+                if(data.grade)
+                    member.grade = data.grade.charAt(0).toUpperCase() + data.grade.slice(1).toLowerCase();
+                if(data.section)
+                    member.section = data.section;
+                member.position = "Member";
+                member.requirements = {
+                    dues: "$0",
+                    ptp: "$0"
+                }
+
+                admin.database().ref("/"+year+"/members/"+id).set(member);
             }
 
-            admin.database().ref("/"+year+"/members/"+id).set(member);
             admin.database().ref("signup").remove();
+
         })
     }
     else
