@@ -23,7 +23,6 @@ exports.signUp = functions.database.ref("/signup/{key}/").onCreate( (snap, conte
             });
 
             let members = dbVal[year]["members"];
-            console.log(!Object.keys(members).includes(id));
             if(!Object.keys(members).includes(id))
             {
                 member.contact = {};
