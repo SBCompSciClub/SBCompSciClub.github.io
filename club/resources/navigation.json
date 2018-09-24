@@ -90,6 +90,12 @@
             "routing": "/signup",
             "directory": "/club/pages/signup/",
             "component": "generic"
+        },
+        "Fair":{
+            "visible": "none",
+            "routing": "/fair",
+            "directory": "/club/pages/fair/",
+            "component": "generic"
         }
     },
     "buttons": {
