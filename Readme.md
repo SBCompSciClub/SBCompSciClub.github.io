@@ -21,7 +21,7 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Views](#views)
     - [Edit Defaults and Custom Views](#edit-defaults-and-custom-views)
     - [Equations and Boolean Checking](#equations-and-boolean-checking)
-    - [Adding a Member](#adding-a-member)   
+    - [Adding a Member](#adding-a-member)
     - [Adding Fields](#adding-fields)
     - [Importing and Exporting](#importing-and-exporting)
     - [Graphing](#graphing)
