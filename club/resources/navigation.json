@@ -92,7 +92,7 @@
             "component": "generic"
         },
         "Fair":{
-            "visible": "none",
+            "visible": "right",
             "routing": "/fair",
             "directory": "/club/pages/fair/",
             "component": "generic"
