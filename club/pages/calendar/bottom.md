@@ -18,7 +18,7 @@ Fortunately, the Computer Science Club meets every other week on Thursday. Meeti
 - <font style="color: blue;font-size: 130%">May 23, 2019</font>
 - <font style="color: blue;font-size: 130%">Jun 6, 2019</font>
 
-Dates listed here are subject to change at <span draggable="true">anytime</span>. For significant changes, we will most likely send an email.
+Dates listed here are subject to change at <span draggable="true">anytime</span>. For significant changes, we will most likely send an email and/or notify you on remind.
 
 <p></p>
 
