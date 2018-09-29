@@ -73,10 +73,10 @@
             "directory": "/club/pages/advanced/demos/place/",
             "component": "generic"
         },
-        "Fair":{
+        "Signup - Day 1 Attendance": {
             "visible": "right",
-            "routing": "/fair",
-            "directory": "/club/pages/fair/",
+            "routing": "/signup",
+            "directory": "/club/pages/signup/",
             "component": "generic"
         },
         "About": {
@@ -91,10 +91,10 @@
             "directory": "/club/pages/calendar/",
             "component": "generic"
         },
-        "Signup": {
+        "Fair":{
             "visible": "none",
-            "routing": "/signup",
-            "directory": "/club/pages/signup/",
+            "routing": "/fair",
+            "directory": "/club/pages/fair/",
             "component": "generic"
         }
     },
