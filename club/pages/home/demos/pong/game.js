@@ -8,20 +8,16 @@ let config = {
 };
 firebase.initializeApp(config);
 
-let curUser = null;
 
 
 window.onload = () => {
-    let provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithRedirect(provider);
+    if(!firebase.auth().currentUser) {
+        let provider = new firebase.auth.GoogleAuthProvider();
 
-    firebase.auth().getRedirectResult().then(result => {
-
-            curUser = result.user;
-
-        }).catch(error => {
-            console.log(error);
-    });
-
+        firebase.auth().signInWithPopup(provider).then(result => {
+            }).catch(error => {
+                console.log(error);
+        });
+    }
 
 };
