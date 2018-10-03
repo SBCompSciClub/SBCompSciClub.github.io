@@ -12,25 +12,27 @@ firebase.initializeApp(config);
 
 window.onload = () => {
     if(!firebase.auth().currentUser) {
-        let provider = new firebase.auth.GoogleAuthProvider();
-
-        firebase.auth().signInWithPopup(provider).then(result => {
-            }).catch(error => {
-                console.log(error);
+        console.log("HI");
+        firebase.auth().signInAnonymously().catch(err => {
+            // location.reload();
         });
     }
 
 };
 
+window.onbeforeunload = function(){
+   firebase.database().ref("users/"+firebase.auth().currentUser.uid+"/active").set(false);
+}
+
 drawText({text: "HI", x:100, y:100});
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-      drawText({
-          text: user.displayName,
-          x: 10,
-          y: 10
-      });
+    firebase.database().ref("users/"+user.uid+"/active").set(true);
+    firebase.database().ref("users/"+user.uid+"/name").once("value", snap => {
+      if(!snap.val())
+        firebase.database().ref("users/"+user.uid+"/name").set(prompt("What is you name? "));
+    });
   } else {
     // No user is signed in.
   }
