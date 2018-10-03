@@ -34,5 +34,4 @@ let drawText = text => {
     gradient.addColorStop("0.5","blue");
     gradient.addColorStop("1.0","red");
     c.fillStyle=gradient;
-    c.fillText("Big smile!",10,90);
 };
