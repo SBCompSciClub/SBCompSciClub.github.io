@@ -22,7 +22,7 @@ window.onload = () => {
 
 };
 
-drawText({text: "HI", x=100, y=100});
+drawText({text: "HI", x:100, y:100});
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
