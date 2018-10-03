@@ -23,3 +23,16 @@ let drawBall = ball => {
     c.stroke();
     c.closePath();
 };
+
+let drawText = text => {
+    c.font="20px Georgia";
+    c.fillText(text.text,text.x,text.y);
+
+    c.font="30px Verdana";
+    let gradient=c.createLinearGradient(0,0,canvas.width,0);
+    gradient.addColorStop("0","magenta");
+    gradient.addColorStop("0.5","blue");
+    gradient.addColorStop("1.0","red");
+    c.fillStyle=gradient;
+    c.fillText("Big smile!",10,90);
+};

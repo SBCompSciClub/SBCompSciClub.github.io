@@ -21,3 +21,11 @@ window.onload = () => {
     }
 
 };
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+      drawText(user.displayName);
+  } else {
+    // No user is signed in.
+  }
+});
