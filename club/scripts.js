@@ -57,10 +57,10 @@ function activateScripts(state){
 				p.innerHTML = p.innerHTML.replace("Rishav Bhagat", "<span id='abcdefg'>Rishav Bhagat</span>");
 				sp = document.querySelector("#abcdefg");
 				sp.onmouseenter = (event)=>{
-					sp.innerHTML = mk.getMeme();
+					//sp.innerHTML = mk.getMeme();
 				}
 				sp.onmouseleave = (event)=>{
-					sp.innerHTML = "Rishav Bhagat";
+					//sp.innerHTML = "Rishav Bhagat";
 				}
 			}
 	}, 100);

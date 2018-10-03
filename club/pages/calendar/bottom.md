@@ -1,22 +1,24 @@
-# Meeting Dates <p style="display: inline; font-size: 25px">for the 2017-2018 school year</p>
-Fortunately for you, the Computer Science Club meets twice a month on thursday. Meeting dates can be found below or on the school website. Be sure to check here for any changes.
-- <font style="color: gray">October 12, 2017</font>
-- <font style="color: gray">October 26, 2017</font>
-- <font style="color: gray">November 16, 2017</font>
-- <font style="color: gray">November 30, 2017</font>
-- <font style="color: gray">December 14, 2017</font>
-- <font style="color: rgb(150, 0, 0);"><strike>January 4, 2018</strike></font>
-- <font style="color: gray">January 18, 2018</font>
-- <font style="color: gray">February 1, 2018</font>
-- <font style="color: gray">February 15, 2018</font>
-- <font style="color: gray">March 1, 2018</font>
-- <font style="color: gray">March 15, 2018</font>
-- <font style="color: gray">April 12, 2018</font>
-- <font style="color: gray">April 26, 2018</font>
-- <font style="color: green">May 24, 2018</font> Officer Submissions
-- June 14, 2018
+# <span class="ap-txt">Meeting Dates <p style="display: inline; font-size: 25px">for the 2018-2019 school year</p></span>
+Fortunately, the Computer Science Club meets every other week on Thursday. Meeting dates can be found below or on the school website. Be sure to check here for any changes.
 
-Dates listed here are subject to change at <span draggable="true">anytime</span>. For significant changes, we will most likely send an email.
+- <font style="color: blue;font-size: 150%">Oct 4, 2018</font>
+- <font style="color: blue;font-size: 130%">Oct 18, 2018</font>
+- <font style="color: blue;font-size: 130%">Nov 1, 2018</font>
+- <font style="color: blue;font-size: 130%">Nov 15, 2018</font>
+- <font style="color: blue;font-size: 130%">Nov 29, 2018</font>
+- <font style="color: blue;font-size: 130%">Dec 13, 2018</font>
+- <font style="color: blue;font-size: 130%">Jan 3, 2018</font>
+- <font style="color: blue;font-size: 130%">Jan 17, 2019</font>
+- <font style="color: blue;font-size: 130%">Jan 31, 2019</font>
+- <font style="color: blue;font-size: 130%">Feb 14, 2019</font>
+- <font style="color: blue;font-size: 130%">Feb 28, 2019</font>
+- <font style="color: blue;font-size: 130%">Mar 14, 2019</font>
+- <font style="color: blue;font-size: 130%">Mar 28, 2019</font>
+- <font style="color: blue;font-size: 130%">Apr 11, 2019</font>
+- <font style="color: blue;font-size: 130%">May 23, 2019</font>
+- <font style="color: blue;font-size: 130%">Jun 6, 2019</font>
+
+Dates listed here are subject to change at <span draggable="true">anytime</span>. For significant changes, we will most likely send an email and/or notify you on remind.
 
 <p></p>
 
