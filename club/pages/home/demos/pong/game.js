@@ -22,9 +22,15 @@ window.onload = () => {
 
 };
 
+drawText({text: "HI", x=100, y=100});
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-      drawText(user.displayName);
+      drawText({
+          text: user.displayName,
+          x: 10,
+          y: 10
+      });
   } else {
     // No user is signed in.
   }
