@@ -9,7 +9,7 @@ let config = {
 firebase.initializeApp(config);
 
 let paddle = {
-    x: canvas.width*0.5,
+    x: canvas.width*0.35,
     y: canvas.height*0.85,
     w: canvas.width*0.3,
     h: canvas.height*0.1
@@ -80,12 +80,12 @@ function animate() {
 
 
     if(leftPressed)
-        paddle.x-=0.002*innerWidth;
+        paddle.x-=0.01*canvas.width;
     if(rightPressed)
-        paddle.x+=0.002*innerHeight;
+        paddle.x+=0.01*canvas.width;
 
     c.fillStyle = '#ffffff';
-    c.fillRect(paddle.x - paddle.w/2, innerHeight*0.1, paddle.w, paddle.h);
+    c.fillRect(paddle.x, paddle.y, paddle.w, paddle.h);
 }
 
 
