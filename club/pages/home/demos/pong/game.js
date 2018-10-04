@@ -8,13 +8,21 @@ let config = {
 };
 firebase.initializeApp(config);
 
+let paddle = {
+    x: 0,
+    y: window.innerHeight*0.85,
+    w: window.innerWidth*0.3,
+    h: window.innerHeight*0.1
+};
 
+window.addEventListener('mousemove', function(event) {
+	paddle.x = event.clientX;
+});
 
 window.onload = () => {
     if(!firebase.auth().currentUser) {
-        console.log("HI");
         firebase.auth().signInAnonymously().catch(err => {
-            // location.reload();
+            location.reload();
         });
     }
 
@@ -24,8 +32,6 @@ window.onbeforeunload = function(){
    firebase.database().ref("users/"+firebase.auth().currentUser.uid+"/active").set(false);
 }
 
-drawText({text: "HI", x:100, y:100});
-
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     firebase.database().ref("users/"+user.uid+"/active").set(true);
@@ -33,7 +39,23 @@ firebase.auth().onAuthStateChanged(function(user) {
       if(!snap.val())
         firebase.database().ref("users/"+user.uid+"/name").set(prompt("What is you name? "));
     });
+    firebase.database().ref("users/"+user.uid+"/misses").once("value", snap => {
+      if(!snap.val())
+        firebase.database().ref("users/"+user.uid+"/misses").set(0);
+    });
   } else {
     // No user is signed in.
   }
 });
+
+function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, canvas.width, canvas.height);
+
+
+    c.fillStyle = '#ffffff';
+
+    c.fillRect(paddle.x - paddle.w/2, innerHeight*0.1, paddle.w, paddle.h);
+}
+
+animate();
