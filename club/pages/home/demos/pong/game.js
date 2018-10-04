@@ -9,14 +9,32 @@ let config = {
 firebase.initializeApp(config);
 
 let paddle = {
-    x: 0,
-    y: window.innerHeight*0.85,
-    w: window.innerWidth*0.3,
-    h: window.innerHeight*0.1
+    x: canvas.width*0.5,
+    y: canvas.height*0.85,
+    w: canvas.width*0.3,
+    h: canvas.height*0.1
 };
 
-window.addEventListener('mousemove', function(event) {
-	paddle.x = event.clientX;
+let left = document.getElementsByClassName('left')[0];
+let right = document.getElementsByClassName('right')[0];
+
+let leftPressed = false;
+let rightPressed = false;
+
+left.addEventListener("mousedown", () => {
+    leftPressed = true;
+});
+
+right.addEventListener("mousedown", () => {
+    rightPressed = true;
+});
+
+left.addEventListener("mouseup", () => {
+    leftPressed = false;
+});
+
+right.addEventListener("mouseup", () => {
+    rightPressed = false;
 });
 
 window.onload = () => {
@@ -53,8 +71,12 @@ function animate() {
     c.clearRect(0, 0, canvas.width, canvas.height);
 
 
-    c.fillStyle = '#ffffff';
+    if(leftPressed)
+        paddle.x-=0.002*innerWidth;
+    if(rightPressed)
+        paddle.x+=0.002*innerHeight;
 
+    c.fillStyle = '#ffffff';
     c.fillRect(paddle.x - paddle.w/2, innerHeight*0.1, paddle.w, paddle.h);
 }
 
