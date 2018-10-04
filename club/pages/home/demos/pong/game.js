@@ -29,13 +29,11 @@ right.addEventListener("mousedown", () => {
     rightPressed = true;
 });
 
-left.addEventListener("mouseup", () => {
+window.addEventListener("mouseup", () => {
     leftPressed = false;
-});
-
-right.addEventListener("mouseup", () => {
     rightPressed = false;
 });
+
 
 window.onload = () => {
     if(!firebase.auth().currentUser) {
@@ -53,17 +51,14 @@ window.onbeforeunload = function(){
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     firebase.database().ref("users/"+user.uid+"/active").set(true);
-    firebase.database().ref("users/"+user.uid+"/name").once("value", snap => {
-      if(!snap.val())
-        firebase.database().ref("users/"+user.uid+"/name").set(prompt("What is you name? "));
-    });
     firebase.database().ref("users/"+user.uid+"/misses").once("value", snap => {
       if(!snap.val())
         firebase.database().ref("users/"+user.uid+"/misses").set(0);
     });
+    init();
   } else {
-    // No user is signed in.
-  }
+      $('#setUpModal').modal('show');
+    }
 });
 
 function animate() {
@@ -80,4 +75,13 @@ function animate() {
     c.fillRect(paddle.x - paddle.w/2, innerHeight*0.1, paddle.w, paddle.h);
 }
 
-animate();
+
+function init() {
+    animate();
+}
+
+function start() {
+    $('#setUpModal').modal('hide');
+    firebase.database().ref("users/"+firebase.auth().currentUser.uid+"/name").set(document.getElementById('nameId').value);
+    init();
+}
