@@ -10,9 +10,9 @@ firebase.initializeApp(config);
 
 let paddle = {
     x: canvas.width*0.35,
-    y: canvas.height*0.85,
+    y: canvas.height*0.90,
     w: canvas.width*0.3,
-    h: canvas.height*0.1
+    h: canvas.height*0.05
 };
 
 let left = document.getElementsByClassName('left')[0];
