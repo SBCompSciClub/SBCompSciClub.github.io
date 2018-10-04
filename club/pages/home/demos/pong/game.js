@@ -35,6 +35,19 @@ window.addEventListener("mouseup", () => {
 });
 
 
+left.addEventListener("touchstart", () => {
+    leftPressed = true;
+});
+
+right.addEventListener("touchstart", () => {
+    rightPressed = true;
+});
+
+window.addEventListener("touchend", () => {
+    leftPressed = false;
+    rightPressed = false;
+});
+
 window.onload = () => {
     if(!firebase.auth().currentUser) {
         firebase.auth().signInAnonymously().catch(err => {
