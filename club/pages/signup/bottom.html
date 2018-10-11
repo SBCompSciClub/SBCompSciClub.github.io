@@ -607,6 +607,11 @@
             <small class="form-element-hint">Don't know what Github is, or dont have an account? Don't worry, skip this.</small>
             <small class="form-element-hint">Start with https://github.com/</small>
         </div>
+        <div class="form-element form-input">
+            <input id="gender" class="form-element-field" placeholder="Please enter your gender" type="input"/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="gender">Gender</label>
+        </div>
         <div class="form-radio form-radio-block">
             <div class="form-radio-legend ap-txt form-title">Current Grade Level:</div>
             <br>
@@ -668,6 +673,7 @@
                 let email = document.getElementById('email').value;
                 let github = document.getElementById('github').value;
                 let id = document.getElementById('id-num').value;
+                let gender = document.getElementById('gender').value;
 
                 firebase.database().ref('signup').push({
                     grade: grade,
@@ -678,7 +684,8 @@
                     },
                     email: email,
                     id: id,
-                    github: github
+                    github: github,
+                    gender: gender
                 }).then(() => { location.reload(); });
 
             }" style="position: fixed; height: 0px; width: 0px; margin: 0px; padding: 0px;" />
