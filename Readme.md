@@ -25,6 +25,7 @@ In this club, you will be exposed to cutting edge code and various programming u
     - [Adding Fields](#adding-fields)
     - [Importing and Exporting](#importing-and-exporting)
     - [Graphing](#graphing)
+    - [Mailing](#mailing)
     - [Other](#other)
 - [Known Issues](#known-issues)
 ## Project Structure
@@ -200,6 +201,8 @@ This is the portal that the computer science club officers log into.
 ### Authentication
 Sign in with the account was created by you. If you ever forget your password, send yourself a password change email via firebase, or ask the awesome amazing cool developer who is currently managing the portal.
 
+To add an account make sure to create it in the firebase console and add the uid to adminuids.
+
 ### Views
 The current view determines what information is dumped onto the table. The default views are shown in View -> [View Name]. You can switch to any of these views simply by clicking on any of them. The complete view just contains all the information in the database.
 
@@ -245,7 +248,19 @@ The year you are viewing is shown to the left of the Refresh Button. If you clic
 
 ### Graphing
 
-When you click the `Graph` button a graph of the attendance throughout the past year shows up. The graph includes how many people came on each day, and how many of each grade level came. You can toggle the bar graphs or line graph by clicking the buttons above the graph. For example, by clicking freshman, you will toggle the freshman bar graph.
+When you click the `Graph` button, a graph of the attendance throughout the past year shows up. The graph includes how many people came on each day, and how many of each grade level came. You can toggle the bar graphs or line graph by clicking the buttons above the graph. For example, by clicking freshman, you will toggle the freshman bar graph.
+
+### Mailing
+When you click the 'Email' button, a modal with a form should show up. Here you can send an email through the club email from the portal itself. This is made using the node module nodemailer and cloud functions.
+
+In the to box there are a variety of ways to choose who the email gets sent to.
+- The first way is to use key words. This will be the most used way to send mails. Putting `all` into the To: input box will send this email to everyone in the database for this year. Using `officers` will send an email to the officers. Using `members` will send it to all the non-officer members. Using `credit` will send it to every who currently will get credit. These key words get converted into the check syntax (see below).
+- Another way is to manually type in the email. For example, you can put in test@test.com and it will send the email to that person. Now, if you want to send to many people then just use a comma and separate each email that way. For example, test1@test.com, test2@test.com, test3@test.com
+- You can also use the checking syntax to decide who get these emails. This will loop through each user and check your requirements against them. If it returns true then the email gets send to them. For example, using `?{grade} == "Senior"` will send it to all the seniors. As this uses the check function, code can be injected through here so be careful.
+
+The Subject and Message Fields are self explanatory. After you click send, make sure you get an alert confirm that the data was sent. When this alert displays, you know that the data got sent to the database successfully. After that the cloud function should run from Google's servers and send the email.
+
+If you would like to send an email to people from a different year using the check syntax or the key words then just switch to that year using Data -> [change the year]. And then click email and follow the same steps. Make sure that you are on the right year before sending the email since you might accidently send the email to the wrong group of people just by selecting the wrong year. You can check the year on the top right to the left of the refresh button.
 
 ### Other
 The Sign Out button will sign you out.
