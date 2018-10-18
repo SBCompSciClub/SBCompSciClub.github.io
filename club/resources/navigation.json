@@ -73,7 +73,7 @@
             "directory": "/club/pages/advanced/demos/place/",
             "component": "generic"
         },
-        "Signup - Day 1 Attendance": {
+        "Signup": {
             "visible": "right",
             "routing": "/signup",
             "directory": "/club/pages/signup/",
