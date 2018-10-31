@@ -1,0 +1,48 @@
+* { 
+	/*border:1px solid;*/
+}
+
+body {
+	text-align:center;
+	font-family: "Avenir", sans-serif;
+	height: 100%;
+}
+
+#container {
+	width:90%;
+	min-width: 800px;
+	margin:0px auto;
+	padding-top:1%;
+	height: 80%;
+}
+
+#container > * {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.heading {
+	height: 30px;
+	width: 200px;
+	display: inline;
+}
+
+#box{
+	height: 600px;
+	margin-top: 3%;
+}
+
+#left-container{
+	width: 45%;
+	height:500px;
+	float: left;
+	margin-left:2.5%;
+	margin-right:2.5%;
+	margin-top: 50px;
+}
+
+iframe {
+	width: 45%;
+	height: 500px;
+	margin-top: 50px;
+}

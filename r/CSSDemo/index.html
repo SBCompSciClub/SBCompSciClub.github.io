@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML DEMO</title>
+        <link rel="stylesheet" href="index.css" />
+        <style type="text/css">
+        
+body {
+	background-color: rgb(220, 220, 220);
+}
+
+#container {
+	background-color: rgb(240, 240, 240);
+	padding-bottom: 5px;
+}
+        
+h1 {
+	background-color: rgb(220, 220, 235);
+	color: rgb(10, 10, 170);
+	border: none;
+	border-bottom: 5px solid rgb(50, 50, 100);
+	font-family: "Andale Mono", sans-serif;
+	padding: 15px;
+	font-size: 60px;
+	margin-top: 1%;
+	border-radius: 5px;
+}
+
+#headerContainer {
+	background-color: rgb(180, 220, 255);
+	padding: 10px;
+	width: 800px;
+	margin: 0px auto;
+	border-left: 5px solid rgb(150, 190, 225);
+	border-radius: 5px;
+}
+
+#left-container {
+	background-color: rgb(240, 150, 0);
+	border-radius: 5px;
+}
+
+span {
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#footer {
+	background-color: rgb(200, 200, 200);
+	padding: 5px;
+	border-radius: 5px;
+}
+        
+        </style>
+    </head>
+    <body>
+		<div id="container">
+			<h1>This is a header (1)</h1>
+			
+			<div id="headerContainer">
+				<h2 class="heading">This is a header (2)</h2>
+				<h3 class="heading">This is a header (3)</h3>
+				<h4 class="heading">This is a header (4)</h4>
+				<h5 class="heading">This is a header (5)</h5>
+				<h6 class="heading">This is a header (6)</h6>
+			</div>
+			
+			<div id="box">
+				<div id="left-container">
+					<h1 style="margin-top: 0px; font-size:25px; font-family:'Avenir'; font-weight:normal; padding:5px; background-color:rgb(50,10,10); color:rgb(250, 220, 220); border-color:rgb(150, 100, 100)">
+					Styled with inline styles</h1>
+					<span>This is in a span.</span> But this is outside of it
+					<p> This is a paragraph tag </p>
+					<a href="https://sbcompsciclub.github.io"> This is a link to our website! </a>
+					<br/>
+					<img src="http://www.kinyu-z.net/data/wallpapers/50/877980.jpg" width="200px"/>
+					<p> And all of this is wrapped with a div with a linear gradient as the background </p>
+				</div>
+
+				<iframe src="https://sbcompsciclub.github.io/club/"></iframe>
+			</div>
+			<p id="footer"> That is an iframe to our site </p>
+		</div>
+    </body>
+</html>
