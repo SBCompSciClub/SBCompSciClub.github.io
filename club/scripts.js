@@ -56,7 +56,7 @@ function activateScripts(state){
 			if(p !== undefined){
 				p.innerHTML = p.innerHTML.replace("Rishav Bhagat", "<span id='abcdefg'>Rishav Bhagat</span>");
 				sp = document.querySelector("#abcdefg");
-				sp.onmouseenter = (event)=>{
+				sp.onmouseover = (event)=>{
 					sp.innerHTML = mk.getMeme();
 				}
 				sp.onmouseout = (event)=>{
