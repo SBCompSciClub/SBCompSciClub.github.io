@@ -59,7 +59,7 @@ function activateScripts(state){
 				sp.onmouseenter = (event)=>{
 					sp.innerHTML = mk.getMeme();
 				}
-				sp.onmouseout = (event)=>{
+				sp.onmouseleave = (event)=>{
 					sp.innerHTML = "Rishav Bhagat";
 				}
 			}
