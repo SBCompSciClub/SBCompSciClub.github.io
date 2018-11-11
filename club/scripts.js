@@ -52,8 +52,8 @@ function activateScripts(state){
 		case 'about':
 	setTimeout( ()=>{
 			let p = document.querySelector(".lead");
-			let sp;
-			if(p !== undefined){
+			let sp = document.querySelector("#abcdefg");
+			if(p !== undefined && sp !== undefined){
 				p.innerHTML = p.innerHTML.replace("Rishav Bhagat", "<span id='abcdefg'>Rishav Bhagat</span>");
 				sp = document.querySelector("#abcdefg");
 				sp.onmouseenter = (event)=>{
