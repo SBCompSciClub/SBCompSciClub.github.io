@@ -1,7 +1,7 @@
 # About Us
 ### Executive Members
 
-**Swapnil Napuri, <a href="https://rishavb123.github.io"> Rishav Bhagat</a>, Shreya Suresh, <a href="https://sethusenthil.com">Sethu Senthil</a>, <a href="https://scalarfield.github.io">Rajat Peddinti</a> and Nehal Thakkar**
+**Swapnil Napuri, <a href="bhagat.io"> Rishav Bhagat</a>, Shreya Suresh, <a href="https://sethusenthil.com">Sethu Senthil</a>, <a href="https://scalarfield.github.io">Rajat Peddinti</a> and Nehal Thakkar**
 
 
 ### Contact US
