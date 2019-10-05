@@ -1,22 +1,21 @@
-# <span class="ap-txt">Meeting Dates <p style="display: inline; font-size: 25px">for the 2018-2019 school year</p></span>
+# <span class="ap-txt">Meeting Dates <p style="display: inline; font-size: 25px">for the 2019-2020 school year</p></span>
 Fortunately, the Computer Science Club meets every other week on Thursday. Meeting dates can be found below or on the school website. Be sure to check here for any changes.
 
-- <font style="color: gray;font-size: 130%">Oct 4, 2018</font>
-- <font style="color: gray;font-size: 130%">Oct 18, 2018</font>
-- <font style="color: gray;font-size: 130%">Nov 1, 2018</font>
-- <font style="color: gray;font-size: 130%">Nov 15, 2018 - No meeting due to inclement weather</font>
-- <font style="color: gray;font-size: 130%">Nov 29, 2018</font>
-- <font style="color: gray;font-size: 130%">Dec 13, 2018</font>
-- <font style="color: gray;font-size: 130%">Jan 3, 2019</font>
-- <font style="color: gray;font-size: 130%">Jan 17, 2019</font>
-- <font style="color: gray;font-size: 130%">Jan 31, 2019</font>
-- <font style="color: gray;font-size: 130%">Feb 14, 2019 - Rescheduled to Feb 21, 2019</font>
-- <font style="color: gray;font-size: 130%">Feb 28, 2019</font>
-- <font style="color: gray;font-size: 130%">Mar 14, 2019</font>
-- <font style="color: gray;font-size: 130%">Mar 28, 2019</font>
-- <font style="color: gray;font-size: 130%">Apr 11, 2019</font>
-- <font style="color: green;font-size: 130%">May 23, 2019</font>
-- <font style="color: green;font-size: 130%">Jun 6, 2019 - Will be rescheduled due to half day</font>
+- <font style="color: gray;font-size: 130%">Oct 3, 2019</font>
+- <font style="color: gray;font-size: 130%">Oct 24, 2019</font>
+- <font style="color: gray;font-size: 130%">Nov 14, 2019</font>
+- <font style="color: gray;font-size: 130%">Dec 5, 2019</font>
+- <font style="color: gray;font-size: 130%">Dec 19, 2019</font>
+- <font style="color: gray;font-size: 130%">Jan 2, 2020</font>
+- <font style="color: gray;font-size: 130%">Jan 16, 2020</font>
+- <font style="color: gray;font-size: 130%">Feb 6, 2020</font>
+- <font style="color: gray;font-size: 130%">Feb 20, 2020</font>
+- <font style="color: gray;font-size: 130%">Mar 5, 2020</font>
+- <font style="color: gray;font-size: 130%">Mar 19, 2020</font>
+- <font style="color: gray;font-size: 130%">Apr 9, 2020</font>
+- <font style="color: green;font-size: 130%">Apr 23, 2020</font>
+- <font style="color: green;font-size: 130%">May 21, 2020</font>
+- <font style="color: green;font-size: 130%">Jun 4, 2020</font>
 
 Dates listed here are subject to change at <span draggable="true">anytime</span>. For significant changes, we will most likely send an email and/or notify you on remind.
 
